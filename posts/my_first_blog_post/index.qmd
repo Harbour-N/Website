@@ -1,0 +1,54 @@
+---
+title: "blog post title"
+description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
+author:
+  - name: Nicholas Harbour
+    url: https://scholar.google.co.uk/citations?user=pr-6Zg0AAAAJ&hl=en&oi=ao
+    orcid: 0000-0002-5300-3075
+    affiliation: The University of Nottingham Center for Mathematical Medicine and Biology
+    #affiliation-url: https://ucsb-meds.github.io/ 
+date: 03-29-2024
+categories: [Quarto, R, modeling] # self-defined categories
+citation: 
+  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ # URL to the blog post for citation
+image: preview-image.jpeg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+bibliography: references.bib
+---
+
+my fisrt blog post. let give an example citation [@csik2021]
+
+# Heading 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus. 
+
+## Merriweather
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. **Aliquam feugiat dictum bibendum.** Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. [Fusce luctus](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.
+
+### 3 - Code
+
+This is `inline` code plus a small code chunk.
+
+```{r}
+library(tidyverse)
+
+ggplot(mpg) +
+  geom_jitter(aes(cty, hwy), size = 4, alpha = 0.5) 
+```
+
+
+
+
+#### 4 - Some math stuff
+
+$$
+\int_0^1 f(x) \ dx
+$$
+
+
+
+
+
+
+

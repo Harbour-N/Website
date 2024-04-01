@@ -1,0 +1,20 @@
+---
+title: "Nicholas Harbour"
+toc: False
+about:
+  template: trestles
+  image: photo.jpeg
+  links:
+    - icon: blank
+      text: "{{< iconify academicons google-scholar >}} Google scholar"
+      href: https://scholar.google.co.uk/citations?user=pr-6Zg0AAAAJ&hl=en&oi=ao
+    - icon: github
+      text: Github
+      href: https://github.com/Harbour-N
+---
+
+# Bio
+
+I am a PhD student at the university of Nottingham, based in the Centre for Mathematical Medicine and Biology (CMMB). My research focuses on using mathematical modelling, bioinformatics, data science and machine learning to better understand cancer and improve treatment outcomes.
+
+

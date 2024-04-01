@@ -1,0 +1,17 @@
+{
+  "hash": "a5542b21a32ba72e27fbdccaac0aa233",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"blog post title\"\ndescription: \"blog post description (appears underneath the title in smaller text) which is included on the listing page\"\nauthor:\n  - name: Nicholas Harbour\n    url: https://scholar.google.co.uk/citations?user=pr-6Zg0AAAAJ&hl=en&oi=ao\n    orcid: 0000-0002-5300-3075\n    affiliation: The University of Nottingham Center for Mathematical Medicine and Biology\n    #affiliation-url: https://ucsb-meds.github.io/ \ndate: 03-29-2024\ncategories: [Quarto, R, modeling] # self-defined categories\ncitation: \n  url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ # URL to the blog post for citation\nimage: preview-image.jpeg\ndraft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\n---\n\n\nmy fist math bio blog post\n\n# Heading 1\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus. \n\n## Merriweather\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. **Aliquam feugiat dictum bibendum.** Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. [Fusce luctus](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n### 3 - Code\n\nThis is `inline` code plus a small code chunk.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tidyverse)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'tidyverse' was built under R version 4.3.2\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\nWarning: package 'readr' was built under R version 4.3.2\n```\n\n\n:::\n\n::: {.cell-output .cell-output-stderr}\n\n```\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.3     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n```\n\n\n:::\n\n```{.r .cell-code}\nggplot(mpg) +\n  geom_jitter(aes(cty, hwy), size = 4, alpha = 0.5) \n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n\n\n\n#### 4 - Some math stuff\n\n$$\n\\int_0^1 f(x) \\ dx\n$$\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

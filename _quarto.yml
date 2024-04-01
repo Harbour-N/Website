@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Nicholas Harbour"
+  #site-url: https://www.nicholas-harbour.com
+  search: true # use this line to remove search bar
+  page-footer: 
+    left: "Nicholas Harbour" 
+    right: 
+      - icon: blank
+        text: "{{< iconify academicons google-scholar >}}"
+        href: https://scholar.google.co.uk/citations?user=pr-6Zg0AAAAJ&hl=en&oi=ao
+      - icon: github
+        href: https://github.com/Harbour-N 
+  navbar:
+    background: primary
+    left:
+      - text: "Home"
+        file: index.qmd
+      - Publications.qmd
+      - text: "Conferences"
+        file: Conferences.qmd
+      - blog.qmd
+      - text: "CV"
+        file: CV.qmd
+
+    # social links on the right hand side of nav-bar
+    right:
+      - icon: blank
+        text: "{{< iconify academicons google-scholar >}}"
+        href: https://scholar.google.co.uk/citations?user=pr-6Zg0AAAAJ&hl=en&oi=ao
+      - icon: github
+        href: https://github.com/Harbour-N
+      
+  
+   
+    # can add social links as a tools section but can include custom images
+    #tools:
+    #  - icon: github
+    #    href: https://github.com/Harbour-N
+     
+##########################
+format:
+  html:
+    theme: cosmo
+      #light: theme.scss # addlight and dark theme options
+      #dark: theme-dark.scss
+    css: styles.css
+    toc: true
+
+editor: visual
+

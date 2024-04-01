@@ -1,0 +1,291 @@
+---
+title: "Nicholas Harbour resume"
+author: Nicholas Harbour
+date: "`r Sys.Date()`"
+output: 
+  pagedown::html_resume:
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+#knit: pagedown::chrome_print # comment in this line to turn this into a PDF
+---
+
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+```
+
+
+# Aside
+
+
+## Contact Info {#contact}
+
+-   <i class="fa fa-envelope"></i> [nicholas.harbour\@nottingham.ac.uk](mailto:nicholas.harbour@nottingham.ac.uk){.email}
+- <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/></svg> [google scholar](https://scholar.google.co.uk/citations?user=pr-6Zg0AAAAJ&hl=en&oi=ao)
+-   <i class="fa fa-github"></i> [github.com/Harbour-N](https://github.com/Harbour-N)
+
+## Skills
+
+Highly experienced with developing ODE/PDE mathematical models for cancer progression and treatment response.
+
+Matlab, R, Python, LaTeX.
+
+## Other interests
+
+Squash, Running, History.
+
+## Disclaimer
+
+This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+# Main
+
+
+## Nicholas Harbour {#title}
+
+PhD student at the University of Nottingham Centre for Mathematical Medicine and Biology.
+
+My research interests are using mathematical modelling, bioinformatics and machine learning to better understand cancer and improve treatment outcomes.
+
+## Education {data-icon="graduation-cap" data-concise="true"}
+
+
+### The University of Nottingham
+
+PhD Mathematical Biology
+
+Nottingham, UK
+
+Present - 2022
+
+- Mathematical modelling of glioblastoma growth and response to treatment.
+- Analysis of single cell RNAseq data.
+
+### The University of St Andrews
+
+MSc Mathematical Biology (Distinction)
+
+St Andrews, UK
+
+2022 - 2021
+
+- **Dissertation**: Genuinely hybrid local tissue cancer invasion model: A mathematical and computational update
+
+### The University of Nottingham
+
+BSc Natural Sciences (First Class)
+
+Nottingham, UK
+
+- Modules including: Differential Equations, Fluid Dynamics, Optimization, Molecular Evolution, Game Theory, Neurobiology, Fundamental Chemistry, Applied Statistics.
+
+2021 - 2018
+
+## Research Experience {data-icon="laptop"}
+
+### Research collaborator at Mathematical Neuro-Oncology lab (MNO)
+
+A three month research visit to the MNO, funded by international collaboration fund grant.
+
+Mayo Clinic AZ, USA
+
+Jul 2023 - Apr 2023
+
+- Developed an ODE mathematical model for differentiation therapy in combination with radiotherapy in glioblastoma. 
+- Analysis of single cell RNAseq data: batch correction, count normalization, cell cycle phase assignment, pseudotime analysis.
+
+
+## Research Grants {data-icon="award"}
+
+### Integrated Mathematical Oncology (IMO) Workshop 11 pilot fund ($50k)
+
+As runners up at the IMO workshop 11 our group was awarded a pilot fund of $50K to continue investigating our project: Evolutionary steering in ER+ breast cancer.
+
+Moffit Cancer center, USA
+
+2023
+
+### International collaboration fund (£5,000)
+
+A competitive grant from the University of Nottingham to carry out purposeful research visits to international institutions.
+
+Nottingham, UK
+
+2023
+
+- With Markus Owen, Matthew Hubbard, Michael Chappell, Lee Curtin, Kristin Swanson.
+
+
+## Travel Grants & Awards {data-icon="award"}
+
+### Society of Industrial and Applied Mathematics UK and Ireland Section Meeting travel grant
+
+A competitive grant to cover travel costs to attend the conference. 
+
+Manchester, UK
+
+2024
+
+### Data-driven mechanistic models of complex biomedical systems travel grant
+
+A competitive grant to cover travel and accommodation costs to attend the conference. 
+
+Birmingham, UK
+
+2023
+
+
+### Integrated Mathematical Oncology (IMO) Workshop 11 travel grant
+
+A competitive grant to cover travel and accommodation costs to attend the IMO workshop. 
+
+Moffit Cancer center, USA
+
+2023
+
+
+
+### Dean's list
+
+Award for academic excellence.
+
+St Andrews, UK
+
+2022
+
+## Published abstracts {data-icon="file"}
+
+### Inference of cell cycle regulation between glioblastoma subpopulations in vivo to drive computational and mathematical models of the cancer complex system
+
+Neuro-Oncology 2023. DOI: [https://doi.org/10.1093/neuonc/noad179.0150](https://doi.org/10.1093/neuonc/noad179.0150)
+
+N/A
+
+- **Nicholas Harbour**, Lee Curtin, Sebastian Velez, Michael Chappell, Matthew Hubbard, Osama Al-Dalahmah, Peter Canoll, Markus Owen, Kristin Swanson
+
+
+2023
+
+
+## Conferences, workshops and talks {data-icon="file-powerpoint"}
+
+### Society of Industrial and Applied Mathematics UK and Ireland Section Meeting
+
+Poster - A mathematical model for BMP4 induced differentiation therapy in combination with radiotherapy in glioblastoma
+
+Manchester, UK
+
+2024
+
+### Society of Mathematical Biology MathEpiOnco joint meeting
+
+Contributed talk - Virtual clinical trials of BMP4-induced differentiation therapy identify strategies for combination with radiation therapy for glioblastoma patients
+
+Online
+
+2024
+
+### Cancer research Nottingham symposium
+
+Poster - Virtual clinical trials of BMP4-induced differentiation therapy identify strategies for combination with radiation therapy for glioblastoma patients
+
+Nottingham, UK
+
+2024
+
+### Data-driven mechanistic models of complex biomedical systems
+
+Contributed talk - A mathematical model for BMP4 induced differentiation therapy in combination with radiotherapy in glioblastoma
+
+Birmingham, UK
+
+2023
+
+### 28th Annual Scientific Meeting of the Society for Neuro-Oncology
+
+Poster - Inference of cell cycle regulation between glioblastoma subpopulations in vivo to drive computational and mathematical models of the cancer complex system
+
+Vancouver, Canada
+
+2023
+
+### Integrated Mathematical Oncology (IMO) Workshop 11: Steering Evolution/Extinction
+
+Poster - A mathematical model for BMP4 induced differentiation therapy in combination with radiotherapy in glioblastoma
+
+Moffit Cancer Center, USA
+
+2023
+
+### Annual meeting of the Society for Mathematical Biology
+
+Poster - Mathematical modelling of cell cycle dynamics in glioblastoma subpopulations
+
+Ohio, USA
+
+2023
+
+### Mathematical oncology meeting
+
+Poster - Mathematical modelling of interacting subpopulations in glioblastoma using pseudotime
+
+Mayo Clinic AZ, USA
+
+2023
+
+
+## Teaching Experience {data-icon="chalkboard-user"}
+
+### Postgraduate demonstrator
+
+Helping students in problem classes, marking of coursework and exams.
+
+Nottingham, UK
+
+2023
+
+- Modules including: Modelling with Differential Equations, Mathematics for Chemistry, Mathematics for Engineering, Scientific Computing, Fourier Analysis.
+
+## COMMITTEES {data-icon="calendar-days"}
+
+### University of Nottingham Society of Industrial and Applied Mathematics (SIAM) student chapter
+
+Secretary.
+
+Nottingham, UK
+
+Present - 2022
+
+- Organising society events including: industry days, maths challenge, socials.
+
+## PROFESSIONAL MEMBERSHIPS {data-icon="id-badge"}
+
+### Member, Society for Mathematical Biology (SMB)
+
+Member, Mathematical Oncology Subgroup.
+
+N/A
+
+Present - 2023
+
+### Member, European Society for Mathematical and Theoretical Biology (ESMTB)
+
+N/A
+
+N/A
+
+present - 2023
+
+### Member, Institute of Mathematics and its Applications (IMA)
+
+N/A
+
+N/A
+
+Present - 2024
