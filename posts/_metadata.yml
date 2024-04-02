@@ -10,6 +10,6 @@ title-block-banner: true
 toc: true
 toc-depth: 3
 
-format:
-  html:
-    include-after-body: ../footer.html
+#format:
+#  html:
+#    include-after-body: ../footer.html
