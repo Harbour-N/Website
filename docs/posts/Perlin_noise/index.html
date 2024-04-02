@@ -265,7 +265,7 @@ window.Quarto = {
 <section id="step-1" class="level2">
 <h2 class="anchored" data-anchor-id="step-1">Step 1</h2>
 <p>First we need to define a set of regularly spaced points (nodes) along a line. Below shows an example where <span class="math inline">\(i=11\)</span> nodes.</p>
-<div id="dc0d1696" class="cell" data-execution_count="1">
+<div id="b27e55e8" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -295,7 +295,7 @@ window.Quarto = {
 <section id="step-2" class="level2">
 <h2 class="anchored" data-anchor-id="step-2">Step 2</h2>
 <p>At each node we define a random vector with gradient <span class="math inline">\(m_i\)</span> (where <span class="math inline">\(i = 1,2,&nbsp;…, 10\)</span>). For this article we will follow [1] arbitrarily take <span class="math inline">\(-3 \leq m_i \leq 3\)</span>.</p>
-<div id="20aab819" class="cell" data-execution_count="2">
+<div id="df706756" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2) At each node generate a random vector with</span></span>
@@ -333,7 +333,7 @@ window.Quarto = {
 <section id="step-3" class="level2">
 <h2 class="anchored" data-anchor-id="step-3">Step 3</h2>
 <p>If we consider an arbitrary point <span class="math inline">\(x\)</span> in within the interval <span class="math inline">\([p,r]\)</span> (in the example below we consider the first interval <span class="math inline">\([0,1]\)</span>) and want to determine the point where the randomly generated vectors would intercept point <span class="math inline">\(x\)</span>. If we denote <span class="math inline">\(A\)</span> the point where the random vector from the lower boundary of the interval will intercept then <span class="math inline">\(A = (x, mₚ(x - p))\)</span> and the point <span class="math inline">\(B\)</span> where the random vector from the upper node of the interval will intercept the point <span class="math inline">\(x\)</span> is given by <span class="math inline">\(B = (x, - mᵣ(r- x))\)</span>. To simplify notation we will write <span class="math inline">\(A = (x, n_p)\)</span> and <span class="math inline">\(B = (x, n_r)\)</span> where we have taken: <span class="math inline">\(n_p = m_p(x - p)\)</span>, and <span class="math inline">\(n_r = - m_r(r - x)\)</span>.</p>
-<div id="81fca91b" class="cell" data-execution_count="3">
+<div id="ac27a8ff" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 3) consider a point x where x is between 0,1 (i.e. between our 1st and 2nd node)</span></span>
@@ -383,7 +383,7 @@ window.Quarto = {
 <p>We note that <span class="math inline">\(\text{noise}(p) = \text{noise}(r) = 0\)</span>, this is a general property of the noise function and ensures continuity at each node. We also note that we have scaled the noise function according to the size and starting point of the interval, this ensures that the noise function is consistent between different interval sizes and starting points. Applying steps 1–4 across all the nodes we can create a different noise function between each interval. When we combine all the noise functions across the intervals together (concatenate them) we produce what is known as a single octave of Perlin noise. For a particular octave and interval we denote the noise function as <span class="math inline">\(\text{noise}_s,t(x)\)</span>. Then for a particular octave (<span class="math inline">\(s\)</span>) the combination of noise functions across all interval is given by</p>
 <p><span class="math inline">\(\text{Noise}_s(x) = \sum_{t=1}^{t=7} \text{noise}_{s,t}(x)\)</span>.&nbsp;</p>
 <p>In order to produce more realistic/natural looking images we combine several octaves of Perlin noise. This is achieved by using a vertical scaling factor and by increasing the number of nodes in each successive octave. Thus octave two will have <span class="math inline">\(20\)</span> nodes, where the first interval will now be <span class="math inline">\([0,0.5]\)</span> and the scaling factor will therefore be <span class="math inline">\(0.5\)</span>. Below I have plotted the fisrt two octaves of Perlin noise.</p>
-<div id="daef20be" class="cell" data-execution_count="4">
+<div id="e9d647d2" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 4) use interpolation to find the value of the noise function at x</span></span>
@@ -499,7 +499,7 @@ window.Quarto = {
 <p>In general we can write the combination of several octaves (where we assume the scaling factor has not yet been applied) of noise as&nbsp;</p>
 <p><span class="math inline">\(equation = goeshearr 1+6\)</span></p>
 <p>Lets combine the first two octaves of Perlin noise that we previously calculated.</p>
-<div id="47ec0648" class="cell" data-execution_count="5">
+<div id="20739ce5" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 5) compute the weighted sum of two Octaves</span></span>
@@ -524,7 +524,7 @@ window.Quarto = {
 </div>
 </div>
 <p>In practice we often combine 6 or more octaves. To do this we will write a function that combines all the previous steps and allows us to combine as many octaves as we wish.</p>
-<div id="0eb2d5a2" class="cell" data-execution_count="6">
+<div id="a96900c3" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 5) compute the weighted sum of T=6 octaves</span></span>
@@ -621,7 +621,7 @@ window.Quarto = {
 <section id="step-1-1" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-1">Step 1</h2>
 <p>Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector.</p>
-<div id="be350765" class="cell" data-execution_count="7">
+<div id="28760631" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.arange(<span class="dv">0</span>,<span class="dv">4</span>,<span class="dv">1</span>)</span>
