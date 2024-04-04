@@ -16,5 +16,3 @@ about:
 # Bio
 
 I am a PhD student at the university of Nottingham, based in the Centre for Mathematical Medicine and Biology (CMMB). My research focuses on using mathematical modelling, bioinformatics, data science and machine learning to better understand cancer and improve treatment outcomes.
-
-
