@@ -1,5 +1,5 @@
 ---
-title: "Perlin noise"
+title: "The Mathematics of Perlin noise"
 discription: "Understranding the mathematics behind Perlin noise, with an implementation in python"
 format:
   html:
@@ -11,9 +11,9 @@ date: 04-01-2024
 categories: [Python, Maths] 
 ---
 
-Perlin noise is a type of gradient noise that is widely used in video games to produce natural looking procedurally generated terrain, as well as many other areas. Perlin developed his algorithm in the 1980s while working on Disney's animated film Tron (1982), in order to improve the realism of computer generated imagery (CGI) at the time. Perlin received the Academy Award for Technical Achievement for his algorithm, who knew that mathematician/computer sicentists win Oscars too!
+Perlin noise is a versatile and widely-used algorithm in computer graphics and simulation, renowned for generating natural-looking patterns and smooth transitions. Perlin developed his algorithm in the 1980s while working on Disney's animated film Tron (1982), in order to improve the realism of computer generated imagery (CGI) at the time. Perlin received the Academy Award for Technical Achievement for his algorithm, who knew that mathematician/computer sicentists win Oscars too!
 
-This post is inspired by an article in the IMA's mathematics today [1], which focused on the mathematics used in video games. In this post I follow the authors description of Perlins algorithm, and provide example code to implement this algorithm in Python using only Numpy (and Matplotlib for visualisation).
+This post is inspired by an article in the IMA's mathematics today \[1\], which focused on the mathematics used in video games. In this post I follow the authors description of Perlins algorithm, and provide example code to implement this algorithm in Python using only Numpy (and Matplotlib for visualisation).
 
 Add a Pic of normal noise compared to Perlin noise
 
@@ -44,7 +44,7 @@ plt.show()
 
 ## Step 2
 
-At each node we define a random vector with gradient $m_i$ (where $i = 1,2, …, 10$). For this article we will follow [1] arbitrarily take $-3 \leq m_i \leq 3$.
+At each node we define a random vector with gradient $m_i$ (where $i = 1,2, …, 10$). For this article we will follow \[1\] arbitrarily take $-3 \leq m_i \leq 3$.
 
 ```{python}
 # Step 2) At each node generate a random vector with
@@ -109,17 +109,15 @@ plt.show()
 
 ```
 
-
 ## Step 4
 
-This is the key step. In order to create smooth more natural looking noise we use interpolation to find the value of the noise function at point x (i.e. noise function between nodes). Originally, Perlin used cubic interpolation function: $f(x) = 3x² - 2x³$, and we will use this in the following (although he later changed it to a quintic function: $f(x) = 6x^5 - 15x^4 - 10x^3$ ). This interpolation function ensures that the derivative of the noise function is continuous at every node, which is what gives Perlin noise its more natural look. The noise function between two nodes is the calculated as: 
+This is the key step. In order to create smooth more natural looking noise we use interpolation to find the value of the noise function at point x (i.e. noise function between nodes). Originally, Perlin used cubic interpolation function: $f(x) = 3x² - 2x³$, and we will use this in the following (although he later changed it to a quintic function: $f(x) = 6x^5 - 15x^4 - 10x^3$ ). This interpolation function ensures that the derivative of the noise function is continuous at every node, which is what gives Perlin noise its more natural look. The noise function between two nodes is the calculated as:
 
-$\text{noise}(x) = n_p + (n_r - n_p)f \left( \frac{x-r}{p-r} \right) = n_p \left(1 - f \left( \frac{x-r}{p-r} \right) \right) + n_r f \left( \frac{x-r}{p-r} \right)$ 
+$\text{noise}(x) = n_p + (n_r - n_p)f \left( \frac{x-r}{p-r} \right) = n_p \left(1 - f \left( \frac{x-r}{p-r} \right) \right) + n_r f \left( \frac{x-r}{p-r} \right)$
 
-We note that $\text{noise}(p) = \text{noise}(r) = 0$, this is a general property of the noise function and ensures continuity at each node. We also note that we have scaled the noise function according to the size and starting point of the interval, this ensures that the noise function is consistent between different interval sizes and starting points.
-Applying steps 1–4 across all the nodes we can create a different noise function between each interval. When we combine all the noise functions across the intervals together (concatenate them) we produce what is known as a single octave of Perlin noise. For a particular octave and interval we denote the noise function as $\text{noise}_s,t(x)$. Then for a particular octave ($s$) the combination of noise functions across all interval is given by
+We note that $\text{noise}(p) = \text{noise}(r) = 0$, this is a general property of the noise function and ensures continuity at each node. We also note that we have scaled the noise function according to the size and starting point of the interval, this ensures that the noise function is consistent between different interval sizes and starting points. Applying steps 1–4 across all the nodes we can create a different noise function between each interval. When we combine all the noise functions across the intervals together (concatenate them) we produce what is known as a single octave of Perlin noise. For a particular octave and interval we denote the noise function as $\text{noise}_s,t(x)$. Then for a particular octave ($s$) the combination of noise functions across all interval is given by
 
- $\text{Noise}_s(x) = \sum_{t=1}^{t=7} \text{noise}_{s,t}(x)$. 
+$\text{Noise}_s(x) = \sum_{t=1}^{t=7} \text{noise}_{s,t}(x)$. 
 
 In order to produce more realistic/natural looking images we combine several octaves of Perlin noise. This is achieved by using a vertical scaling factor and by increasing the number of nodes in each successive octave. Thus octave two will have $20$ nodes, where the first interval will now be $[0,0.5]$ and the scaling factor will therefore be $0.5$. Below I have plotted the fisrt two octaves of Perlin noise.
 
@@ -226,7 +224,6 @@ plt.show()
 
 ```
 
-
 ## Step 5
 
 In general we can write the combination of several octaves (where we assume the scaling factor has not yet been applied) of noise as 
@@ -234,7 +231,6 @@ In general we can write the combination of several octaves (where we assume the 
 $equation = goeshearr 1+6$
 
 Lets combine the first two octaves of Perlin noise that we previously calculated.
-
 
 ```{python}
 
@@ -254,7 +250,6 @@ plt.show()
 ```
 
 In practice we often combine 6 or more octaves. To do this we will write a function that combines all the previous steps and allows us to combine as many octaves as we wish.
-
 
 ```{python}
 # Step 5) compute the weighted sum of T=6 octaves
@@ -338,17 +333,18 @@ plt.yticks([])
 
 Combining more octaves produces more fractal-like noise as finer structures are successively added.
 
+# The algorithm in two dimensions: {#sec-the-algorithm-in-two-dimensions}
 
-# The algorithm in two dimensions:
-
-You may be wondering why Perlin noise is used in video games. Well in this next 2D example we will see how to make a realistic looking random terrain. 
-
+Now that we have an understanding of how the algorithm works in 1D lets look at how it generalises to 2D.
 
 ## Step 1
 
-Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector.
+Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector. @fig-plot
 
 ```{python}
+
+#| label: fig-plot
+#| fig-cap: "Plot"
 
 x = np.arange(0,4,1)
 y = np.arange(0,4,1)
@@ -389,5 +385,3 @@ plt.yticks(y)
 plt.show()
 
 ```
-
-
