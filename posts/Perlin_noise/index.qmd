@@ -1,14 +1,13 @@
 ---
 title: "The Mathematics of Perlin noise"
 discription: "Understranding the mathematics behind Perlin noise, with an implementation in python"
-format:
-  html:
-    code-fold: true
+
 author:
   - name: "Nicholas Harbour"
 
 date: 04-01-2024
 categories: [Python, Maths] 
+# image: preview-image.jpeg
 ---
 
 Perlin noise is a versatile and widely-used algorithm in computer graphics and simulation, renowned for generating natural-looking patterns and smooth transitions. Perlin developed his algorithm in the 1980s while working on Disney's animated film Tron (1982), in order to improve the realism of computer generated imagery (CGI) at the time. Perlin received the Academy Award for Technical Achievement for his algorithm, who knew that mathematician/computer sicentists win Oscars too!

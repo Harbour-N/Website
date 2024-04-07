@@ -10,6 +10,9 @@ title-block-banner: true
 toc: true
 toc-depth: 3
 
-#format:
-#  html:
-#    include-after-body: ../footer.html
+format:
+  html:
+    code-fold: True
+    code-link: True
+    code-tools: True
+    highlight-style: github
