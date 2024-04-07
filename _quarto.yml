@@ -49,6 +49,10 @@ format:
       #dark: theme-dark.scss
     css: styles.css
     toc: true
+    code-fold: true
+    code-link: true
+    code-copy: true
+    highlight-style: atom-one
 
 editor: visual
 

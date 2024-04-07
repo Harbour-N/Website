@@ -10,9 +10,4 @@ title-block-banner: true
 toc: true
 toc-depth: 3
 
-format:
-  html:
-    code-fold: True
-    code-link: True
-    code-tools: True
-    highlight-style: github
+code-tools: true
