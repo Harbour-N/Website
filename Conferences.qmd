@@ -8,6 +8,6 @@ listing:
   type: table # or `default` or `table` or 'grid' or 'custom'; each type has its own set of yaml options to include
   sort: "date desc" # can also sort on more than one field
   categories: true # allows you to sort posts by assigned categories 
-  fields: [date, title, author, description, categories, image]
+  fields: [date, title, author, description]
   filter-ui: False
 ---
