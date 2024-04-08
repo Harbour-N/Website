@@ -1,7 +1,8 @@
 ---
 title: "CCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM"
 doi: https://doi.org/10.1093/neuonc/noad179.0150
-description: "Neuro-Oncolgy, Volume 25, Issue Supplement 5"
+# confence = description
+description: "Society of Neuro Oncology 28th annual meeting"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"

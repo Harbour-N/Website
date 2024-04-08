@@ -1,14 +1,15 @@
 [
   {
-    "listing": "/Conferences.html",
-    "items": [
-      "/Posters_Talks/my_first_pub/index.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/Perlin_noise/index.html"
+    ]
+  },
+  {
+    "listing": "/Conferences.html",
+    "items": [
+      "/Posters_Talks/SNO23/index.html",
+      "/Posters_Talks/MathOnc23/index.html"
     ]
   },
   {
