@@ -1,11 +1,5 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/Perlin_noise/index.html"
-    ]
-  },
-  {
     "listing": "/Conferences.html",
     "items": [
       "/Posters_Talks/SNO23/index.html",
@@ -13,9 +7,16 @@
     ]
   },
   {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Perlin_noise/index.html"
+    ]
+  },
+  {
     "listing": "/Publications.html",
     "items": [
-      "/Pubs/my_first_pub/index.html"
+      "/preprints/hybrid_plus/index.html",
+      "/published_abstracts/my_first_pub/index.html"
     ]
   }
 ]

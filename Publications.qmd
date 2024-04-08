@@ -3,14 +3,35 @@ title: "Publications"
 language:
   listing-page-field-description: "Journal"
   listing-page-field-author: "Author(s)"
-listing: 
-  contents: Pubs # all Quarto docs in the `posts` directory will be included on your listing page. use this if only want to include .qmd files: posts/**/*.qmd
-  type: table # or `default` or `table` or 'grid' or 'custom'; each type has its own set of yaml options to include
-  sort: "date desc" # can also sort on more than one field
-  categories: true # allows you to sort posts by assigned categories 
-  fields: [date, title, author, description, categories, image]
-  filter-ui: False
+listing:
+  - id: Preprints
+    contents: preprints # all Quarto docs in the `posts` directory will be included on your listing page. use this if only want to include .qmd files: posts/**/*.qmd
+    type: table # or `default` or `table` or 'grid' or 'custom'; each type has its own set of yaml options to include
+    sort: "date desc" # can also sort on more than one field
+    categories: true # allows you to sort posts by assigned categories 
+    fields: [date, title, author, description, image]
+    filter-ui: False
+
+  - id: Publishes-abstracts
+    contents: published_abstracts # all Quarto docs in the `posts` directory will be included on your listing page. use this if only want to include .qmd files: posts/**/*.qmd
+    type: table # or `default` or `table` or 'grid' or 'custom'; each type has its own set of yaml options to include
+    sort: "date desc" # can also sort on more than one field
+    categories: true # allows you to sort posts by assigned categories 
+    fields: [date, title, author, description, image]
+    filter-ui: False
+
   
 ---
+
+
+## Preprints
+
+:::{#Preprints}
+:::
+
+## Published abstracts
+
+:::{#Publishes-abstracts}
+:::
 
 

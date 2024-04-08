@@ -1,10 +1,59 @@
 [
   {
-    "objectID": "Pubs/my_first_pub/index.html",
-    "href": "Pubs/my_first_pub/index.html",
+    "objectID": "published_abstracts/my_first_pub/index.html",
+    "href": "published_abstracts/my_first_pub/index.html",
     "title": "CCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM",
     "section": "",
     "text": "Abstract\nGlioblastoma (GBM) is the most aggressive and most common primary malignant brain tumor in adults, with a poor median survival time of 15 months. One of the key challenges in treating GBM is its highly heterogeneous nature, with multiple distinct subtypes that have been shown to occur on both inter- and intra-patient levels. Three main classifications, known as classical/proliferative, mesenchymal and proneural have become commonly demonstrated phenotypes. The cell cycle is a fundamental and highly conserved process that controls faithful division of cells; dysregulation of the cell cycle is known to be a key driver in many cancers. However, how the cell cycle is differently regulated between these subtypes has not been well classified in vivo. We investigate these three GBM subtypes using a recently published single nucleus RNAseq (snRNAseq) data set. We compare cell cycle regulation/dysregulation among these three subtypes using Tricycle, an R/Bioconductor package that utilises dimension reduction via principal component analysis and transfer learning to infer cell cycle position from any snRNAseq data set. We find that the classical GBM subtype has the highest proportion of actively dividing cells (cells in: S/G2/M phases), while the mesenchymal and proneural subtypes have a very low proportion of actively dividing cells. This supports the idea of a proliferation-migration dichotomy between GBM subtypes. We use this proportion of actively proliferating cells to calibrate a minimal spatiotemporal mathematical model for GBM tumor growth that accounts for the differences in cell cycle regulation between these three GBM subtypes."
+  },
+  {
+    "objectID": "preprints/hybrid_plus/index.html",
+    "href": "preprints/hybrid_plus/index.html",
+    "title": "A genuinely hybrid, multiscale 3D cancer invasion and metastasis modelling framework",
+    "section": "",
+    "text": "Abstract\nWe introduce in this paper substantial enhancements to a previously proposed hybrid multiscale cancer invasion modelling framework to better reflect the biological reality and dynamics of cancer. These model updates contribute to a more accurate representation of cancer dynamics, they provide deeper insights and enhance our predictive capabilities.\nKey updates include the integration of porous medium-like diffusion for the evolution of Epithelial-like Cancer Cells and other essential cellular constituents of the system, more realistic modelling of Epithelial-Mesenchymal Transition and Mesenchymal-Epithelial Transition models with the inclusion of Transforming Growth Factor beta within the tumour microenvironment, and the introduction of Compound Poisson Process in the Stochastic Differential Equations that describe the migration behaviour of the Mesenchymal-like Cancer Cells. Another innovative feature of the model is its extension into a multi-organ metastatic framework. This framework connects various organs through a circulatory network, enabling the study of how cancer cells spread to secondary sites."
+  },
+  {
+    "objectID": "Posters_Talks/SNO23/index.html",
+    "href": "Posters_Talks/SNO23/index.html",
+    "title": "CCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM",
+    "section": "",
+    "text": "Abstract\nGlioblastoma (GBM) is the most aggressive and most common primary malignant brain tumor in adults, with a poor median survival time of 15 months. One of the key challenges in treating GBM is its highly heterogeneous nature, with multiple distinct subtypes that have been shown to occur on both inter- and intra-patient levels. Three main classifications, known as classical/proliferative, mesenchymal and proneural have become commonly demonstrated phenotypes. The cell cycle is a fundamental and highly conserved process that controls faithful division of cells; dysregulation of the cell cycle is known to be a key driver in many cancers. However, how the cell cycle is differently regulated between these subtypes has not been well classified in vivo. We investigate these three GBM subtypes using a recently published single nucleus RNAseq (snRNAseq) data set. We compare cell cycle regulation/dysregulation among these three subtypes using Tricycle, an R/Bioconductor package that utilises dimension reduction via principal component analysis and transfer learning to infer cell cycle position from any snRNAseq data set. We find that the classical GBM subtype has the highest proportion of actively dividing cells (cells in: S/G2/M phases), while the mesenchymal and proneural subtypes have a very low proportion of actively dividing cells. This supports the idea of a proliferation-migration dichotomy between GBM subtypes. We use this proportion of actively proliferating cells to calibrate a minimal spatiotemporal mathematical model for GBM tumor growth that accounts for the differences in cell cycle regulation between these three GBM subtypes."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicholas Harbour",
+    "section": "",
+    "text": "Bio\nI am a PhD student at the university of Nottingham, based in the Centre for Mathematical Medicine and Biology (CMMB). My research focuses on using mathematical modelling, bioinformatics, data science and machine learning to better understand cancer and improve treatment outcomes."
+  },
+  {
+    "objectID": "Conferences.html",
+    "href": "Conferences.html",
+    "title": "Conerences, posters and talks",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor(s)\n\n\nConference\n\n\n\n\n\n\nNov 10, 2023\n\n\nCCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM\n\n\nNicholas Harbour, Lee Curtin, Sebastian Velez, Michael Chappell, Matthew Hubbard, Osama Al-Dalahmah, Peter Canoll, Markus Owen, Kristin Swanson\n\n\nSociety of Neuro Oncology 28th annual meeting\n\n\n\n\nMay 1, 2023\n\n\nMathematical modelling of interacting sub-populations in glioblastoma\n\n\nNicholas Harbour\n\n\nMathOnc\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "The Mathematics of Perlin noise\n\n\n\n\n\n\nPython\n\n\nMaths\n\n\n\n\n\n\n\n\n\nApr 1, 2024\n\n\nNicholas Harbour\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "CV.html",
+    "href": "CV.html",
+    "title": "My CV",
+    "section": "",
+    "text": "Download current CV"
+  },
+  {
+    "objectID": "Posters_Talks/MathOnc23/index.html",
+    "href": "Posters_Talks/MathOnc23/index.html",
+    "title": "Mathematical modelling of interacting sub-populations in glioblastoma",
+    "section": "",
+    "text": "Abstract\nOne of the major challenges in successfully treating glioblastoma (GBM) is the significant heterogeneity in cellular composition observed within and between patients. Recent single cell transcriptomics suggests there can be as many as eighteen distinct cell types in a single tumour (Al-Dalahmah et al. 2021). Furthermore, advances in cellular deconvolution techniques, such as CIBERSORTx, allow us to accurately determine the cellular composition of imaged localised biopsies from bulk RNA-Seq (Steen et al. 2020) . Understanding this heterogeneity and how the complex interactions between cellular populations impacts the progression of GBM may lead to novel treatments which exploit the unique cellular composition within individual tumours. We group these eighteen cell types into sub-populations, e.g., glioma, immune, astrocyte, then attempt to learn the dynamics of these sub-populations by considering various interacting ODE/PDE models. Typically, a GBM patient will have biopsies taken at most twice, as well as only a handful of MRI scans. Therefore, the number of temporal data points to fit any model to are very limited. Thus, we apply trajectory inference methods, such as Monocle, to biopsy data, which allows us to order samples via pseudotime, an arbitrary unit of progress akin to real time (Trapnell et al. 2014). We illustrate our modelling approach with a simplified two species Lotka-Volterra style competition model.\n\n\nPoster\n\n\n\n\n\n\n\nReferences\n\nAl-Dalahmah, Osama, Michael G. Argenziano, Adithya Kannan, Aayushi Mahajan, Julia Furnari, Fahad Paryani, Deborah Boyett, et al. 2021. “Re-Convolving the Compositional Landscape of Primary and Recurrent Glioblastoma Reveals Prognostic and Targetable Tissue States.” http://dx.doi.org/10.1101/2021.07.06.451295.\n\n\nSteen, Chloé B., Chih Long Liu, Ash A. Alizadeh, and Aaron M. Newman. 2020. “Profiling Cell Type Abundance and Expression in Bulk Tissues with CIBERSORTx.” In, 135–57. Springer US. https://doi.org/10.1007/978-1-0716-0301-7_7.\n\n\nTrapnell, Cole, Davide Cacchiarelli, Jonna Grimsby, Prapti Pokharel, Shuqiang Li, Michael Morse, Niall J Lennon, Kenneth J Livak, Tarjei S Mikkelsen, and John L Rinn. 2014. “The Dynamics and Regulators of Cell Fate Decisions Are Revealed by Pseudotemporal Ordering of Single Cells.” Nature Biotechnology 32 (4): 381–86. https://doi.org/10.1038/nbt.2859."
   },
   {
     "objectID": "posts/Perlin_noise/index.html",
@@ -56,52 +105,24 @@
     "text": "Step 1\nSimilarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector. Figure 1\n\n\nCode\nx = np.arange(0,4,1)\ny = np.arange(0,4,1)\n\n# In 2D are nodes are now a grid\nX,Y = np.meshgrid(x,y)\n\n\na = -3\nb = 3\nV = m = (b-a)*np.random.random([len(x)*len(y),2]) + a\n\n# normalise to unit vectors\nfor i in range(len(V[:,0])):\n    norm = np.linalg.norm(V[i,:])\n    V[i,:] = V[i,:]/norm\n\n# scale the unit vectors to look nicer in the plot\nV = V*0.4\n\n# loop variable\np = 0\n\nplt.plot(X,Y,'o',color = 'k')\n\nfor i in range(len(x)):\n    for j in range(len(y)):\n    \n        plt.arrow(x[i],y[j],V[p,0],V[p,1], color = \"r\", length_includes_head= True, head_width = 0.05)\n        p = p +1\n\n\nplt.title(\"Generate a random grid of vectors\")\nplt.xlabel(\"x\")\nplt.ylabel(\"y\")\nplt.xticks(x)\nplt.yticks(y)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Plot"
   },
   {
-    "objectID": "Posters_Talks/MathOnc23/index.html",
-    "href": "Posters_Talks/MathOnc23/index.html",
-    "title": "Mathematical modelling of interacting sub-populations in glioblastoma",
-    "section": "",
-    "text": "Abstract\nOne of the major challenges in successfully treating glioblastoma (GBM) is the significant heterogeneity in cellular composition observed within and between patients. Recent single cell transcriptomics suggests there can be as many as eighteen distinct cell types in a single tumour (Al-Dalahmah et al. 2021). Furthermore, advances in cellular deconvolution techniques, such as CIBERSORTx, allow us to accurately determine the cellular composition of imaged localised biopsies from bulk RNA-Seq (Steen et al. 2020) . Understanding this heterogeneity and how the complex interactions between cellular populations impacts the progression of GBM may lead to novel treatments which exploit the unique cellular composition within individual tumours. We group these eighteen cell types into sub-populations, e.g., glioma, immune, astrocyte, then attempt to learn the dynamics of these sub-populations by considering various interacting ODE/PDE models. Typically, a GBM patient will have biopsies taken at most twice, as well as only a handful of MRI scans. Therefore, the number of temporal data points to fit any model to are very limited. Thus, we apply trajectory inference methods, such as Monocle, to biopsy data, which allows us to order samples via pseudotime, an arbitrary unit of progress akin to real time (Trapnell et al. 2014). We illustrate our modelling approach with a simplified two species Lotka-Volterra style competition model.\n\n\nPoster\n\n\n\n\n\n\n\nReferences\n\nAl-Dalahmah, Osama, Michael G. Argenziano, Adithya Kannan, Aayushi Mahajan, Julia Furnari, Fahad Paryani, Deborah Boyett, et al. 2021. “Re-Convolving the Compositional Landscape of Primary and Recurrent Glioblastoma Reveals Prognostic and Targetable Tissue States.” http://dx.doi.org/10.1101/2021.07.06.451295.\n\n\nSteen, Chloé B., Chih Long Liu, Ash A. Alizadeh, and Aaron M. Newman. 2020. “Profiling Cell Type Abundance and Expression in Bulk Tissues with CIBERSORTx.” In, 135–57. Springer US. https://doi.org/10.1007/978-1-0716-0301-7_7.\n\n\nTrapnell, Cole, Davide Cacchiarelli, Jonna Grimsby, Prapti Pokharel, Shuqiang Li, Michael Morse, Niall J Lennon, Kenneth J Livak, Tarjei S Mikkelsen, and John L Rinn. 2014. “The Dynamics and Regulators of Cell Fate Decisions Are Revealed by Pseudotemporal Ordering of Single Cells.” Nature Biotechnology 32 (4): 381–86. https://doi.org/10.1038/nbt.2859."
-  },
-  {
-    "objectID": "CV.html",
-    "href": "CV.html",
-    "title": "My CV",
-    "section": "",
-    "text": "Download current CV"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "The Mathematics of Perlin noise\n\n\n\n\n\n\nPython\n\n\nMaths\n\n\n\n\n\n\n\n\n\nApr 1, 2024\n\n\nNicholas Harbour\n\n\n12 min\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Conferences.html",
-    "href": "Conferences.html",
-    "title": "Conerences, posters and talks",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor(s)\n\n\nConference\n\n\n\n\n\n\nNov 10, 2023\n\n\nCCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM\n\n\nNicholas Harbour, Lee Curtin, Sebastian Velez, Michael Chappell, Matthew Hubbard, Osama Al-Dalahmah, Peter Canoll, Markus Owen, Kristin Swanson\n\n\nSociety of Neuro Oncology 28th annual meeting\n\n\n\n\nMay 1, 2023\n\n\nMathematical modelling of interacting sub-populations in glioblastoma\n\n\nNicholas Harbour\n\n\nMathOnc\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nicholas Harbour",
-    "section": "",
-    "text": "Bio\nI am a PhD student at the university of Nottingham, based in the Centre for Mathematical Medicine and Biology (CMMB). My research focuses on using mathematical modelling, bioinformatics, data science and machine learning to better understand cancer and improve treatment outcomes."
-  },
-  {
-    "objectID": "Posters_Talks/SNO23/index.html",
-    "href": "Posters_Talks/SNO23/index.html",
-    "title": "CCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM",
-    "section": "",
-    "text": "Abstract\nGlioblastoma (GBM) is the most aggressive and most common primary malignant brain tumor in adults, with a poor median survival time of 15 months. One of the key challenges in treating GBM is its highly heterogeneous nature, with multiple distinct subtypes that have been shown to occur on both inter- and intra-patient levels. Three main classifications, known as classical/proliferative, mesenchymal and proneural have become commonly demonstrated phenotypes. The cell cycle is a fundamental and highly conserved process that controls faithful division of cells; dysregulation of the cell cycle is known to be a key driver in many cancers. However, how the cell cycle is differently regulated between these subtypes has not been well classified in vivo. We investigate these three GBM subtypes using a recently published single nucleus RNAseq (snRNAseq) data set. We compare cell cycle regulation/dysregulation among these three subtypes using Tricycle, an R/Bioconductor package that utilises dimension reduction via principal component analysis and transfer learning to infer cell cycle position from any snRNAseq data set. We find that the classical GBM subtype has the highest proportion of actively dividing cells (cells in: S/G2/M phases), while the mesenchymal and proneural subtypes have a very low proportion of actively dividing cells. This supports the idea of a proliferation-migration dichotomy between GBM subtypes. We use this proportion of actively proliferating cells to calibrate a minimal spatiotemporal mathematical model for GBM tumor growth that accounts for the differences in cell cycle regulation between these three GBM subtypes."
-  },
-  {
     "objectID": "Publications.html",
     "href": "Publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor(s)\n\n\nJournal\n\n\nCategories\n\n\n\n\n\n\n\n\nNov 10, 2023\n\n\nCCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM\n\n\nNicholas Harbour, Lee Curtin, Sebastian Velez, Michael Chappell, Matthew Hubbard, Osama Al-Dalahmah, Peter Canoll, Markus Owen, Kristin Swanson\n\n\nNeuro-Oncolgy, Volume 25, Issue Supplement 5\n\n\nMathOnco, Bioinformatics, Published Abstract\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor(s)\n\n\nJournal\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nA genuinely hybrid, multiscale 3D cancer invasion and metastasis modelling framework\n\n\nDimitrios Katsaounis, Nicholas Harbour, Thomas Williams, Mark Chaplain, Nikolaos Sfakianakis\n\n\nbioRxiv\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Publications.html#preprints",
+    "href": "Publications.html#preprints",
+    "title": "Publications",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor(s)\n\n\nJournal\n\n\n\n\n\n\n\n\nJan 15, 2024\n\n\nA genuinely hybrid, multiscale 3D cancer invasion and metastasis modelling framework\n\n\nDimitrios Katsaounis, Nicholas Harbour, Thomas Williams, Mark Chaplain, Nikolaos Sfakianakis\n\n\nbioRxiv\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Publications.html#published-abstracts",
+    "href": "Publications.html#published-abstracts",
+    "title": "Publications",
+    "section": "Published abstracts",
+    "text": "Published abstracts\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n         \n          Author(s)\n        \n     \n  \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor(s)\n\n\nJournal\n\n\n\n\n\n\n\n\nNov 10, 2023\n\n\nCCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM\n\n\nNicholas Harbour, Lee Curtin, Sebastian Velez, Michael Chappell, Matthew Hubbard, Osama Al-Dalahmah, Peter Canoll, Markus Owen, Kristin Swanson\n\n\nNeuro-Oncolgy, Volume 25, Issue Supplement 5\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
