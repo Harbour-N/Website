@@ -5,6 +5,7 @@ description: "bioRxiv"
 # full author syntax
 author:
   - name: Dimitrios Katsaounis
+    orcid: 0009-0002-7918-9805
     affiliations: 
       name: School of Mathematics and Statistics, University St Andrews, North Haugh, St Andrews, UK
   - name: "**Nicholas Harbour**"
@@ -17,19 +18,21 @@ author:
     affiliations: 
       name: School of Mathematics and Statistics, The University of Melbourne, Australia
   - name: Mark Chaplain
+    orcid: 0000-0001-5727-2160
     affiliations: 
       name: School of Mathematics and Statistics, University St Andrews, North Haugh, St Andrews, UK
   - name: Nikolaos Sfakianakis
+    orcid: 0000-0002-2675-6338
     affiliations: 
       name: School of Mathematics and Statistics, University St Andrews, North Haugh, St Andrews, UK
      
 date: 01-15-2024
-categories: [MathOnco, Preprint] 
+categories: [MathOnco, Preprint, MathBio] 
 
 
 
 
-image: preview-image.jpeg
+image: image.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 toc: false
 ---

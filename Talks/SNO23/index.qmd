@@ -1,0 +1,62 @@
+---
+title: "CCRG-01. INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM"
+doi: https://doi.org/10.1093/neuonc/noad179.0150
+# confence = description
+description: "Society of Neuro Oncology 28th annual meeting"
+# full author syntax
+author:
+  - name: "**Nicholas Harbour**"
+    #url: string
+    email: nicholas.harbour@nottingham.ac.uk
+    orcid: ORcid ID
+    attributes:
+      corresponding: True
+    metadata: object
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+      city: Nottingham
+      country: UK
+  - name: Lee Curtin
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Sebastian Velez
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Michael Chappell
+    affiliations:
+      name: Precision Imaging Center, Universtiy of Nottingham, UK
+  - name: Matthew Hubbard
+    affiliations: 
+      name: School of Mathematical Sciences, University of Nottingham, UK
+  - name: Osama Al-Dalahmah
+    affiliations: 
+      name: Columbia University Vagelos College of Physicians and Surgeons, NY, USA
+  - name: Peter Canoll
+    affiliations: 
+      name: Columbia University Irving Medical Center, NY, USA
+  - name: Markus Owen
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+  - name: Kristin Swanson
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+     
+date: 11-10-2023
+categories: [MathOnco, Bioinformatics, Published Abstract] 
+
+
+
+
+image: preview-image.jpeg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+toc: False
+---
+
+# Abstract
+
+Glioblastoma (GBM) is the most aggressive and most common primary malignant brain tumor in adults, with a poor median survival time of 15 months. One of the key challenges in treating GBM is its highly heterogeneous nature, with multiple distinct subtypes that have been shown to occur on both inter- and intra-patient levels. Three main classifications, known as classical/proliferative, mesenchymal and proneural have become commonly demonstrated phenotypes. The cell cycle is a fundamental and highly conserved process that controls faithful division of cells; dysregulation of the cell cycle is known to be a key driver in many cancers. However, how the cell cycle is differently regulated between these subtypes has not been well classified in vivo. We investigate these three GBM subtypes using a recently published single nucleus RNAseq (snRNAseq) data set. We compare cell cycle regulation/dysregulation among these three subtypes using Tricycle, an R/Bioconductor package that utilises dimension reduction via principal component analysis and transfer learning to infer cell cycle position from any snRNAseq data set. We find that the classical GBM subtype has the highest proportion of actively dividing cells (cells in: S/G2/M phases), while the mesenchymal and proneural subtypes have a very low proportion of actively dividing cells. This supports the idea of a proliferation-migration dichotomy between GBM subtypes. We use this proportion of actively proliferating cells to calibrate a minimal spatiotemporal mathematical model for GBM tumor growth that accounts for the differences in cell cycle regulation between these three GBM subtypes.
+
+
+
+
+
