@@ -44,9 +44,10 @@ date: 11-10-2023
 categories: [MathOnco, Bioinformatics, Published Abstract, First Author] 
 
 citation:
-  type: paper-conference
+  type: article-journal
   container-title: "Neuro-Oncology"
-  volume: 25, Issue Supplement 5
+  volume: 25
+  issue: Supplement 5
   author: 
     - name: Nicholas Harbour
     - name: Lee Curtin
@@ -62,7 +63,7 @@ citation:
 image: SNO23_UMAP.svg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 toc: False
-google-scholar: true  
+ 
 ---
 
 # Abstract
