@@ -1,0 +1,82 @@
+---
+title: "Mathematical modelling of cell cycle dynamics in glioblastoma subpopulations"
+# confence = description
+description: " Annual meeting of the Society for Mathematical Biology"
+# full author syntax
+author:
+  - name: "**Nicholas Harbour**"
+    #url: string
+    email: nicholas.harbour@nottingham.ac.uk
+    orcid: 0009-0008-2424-4516
+    attributes:
+      corresponding: True
+    metadata: object
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+      city: Nottingham
+      country: UK
+  - name: Lee Curtin
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Sebastian Velez
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Michael Chappell
+    affiliations:
+      name: Precision Imaging Center, Universtiy of Nottingham, UK
+  - name: Matthew Hubbard
+    affiliations: 
+      name: School of Mathematical Sciences, University of Nottingham, UK
+  - name: Osama Al-Dalahmah
+    affiliations: 
+      name: Columbia University Vagelos College of Physicians and Surgeons, NY, USA
+  - name: Peter Canoll
+    affiliations: 
+      name: Columbia University Irving Medical Center, NY, USA
+  - name: Kristin Swanson
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Markus Owen
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+     
+date: 07-16-2023 # month/day/year
+categories: [MathOnco, Bioinformatics, MathBio, GBM, Cell Cycle, Cancer] 
+
+
+citation:
+  type: post
+  author: 
+    - name: Nicholas Harbour
+    - name: Lee Curtin
+    - name: Sebastian Velez
+    - name: Michael Chappell
+    - name: Matthew Hubbard
+    - name: Osama Al-Dalahmah
+    - name: Peter Canoll
+    - name: Kristin Swanson
+    - name: Markus Owen
+  url: https://2023.smb.org/ONCO/PS01-ONCO-12.html
+
+bibliography: references.bib
+#image: SNO23_UMAP.svg
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+toc: False
+---
+
+# Abstract
+One of the major challenges in successfully treating glioblastoma (GBM) is the significant heterogeneity in cellular composition observed within and between patients. Recent single cell transcriptomics suggests there can be as many as eighteen distinct cell types in a single tumour [@al-dalahmah2021]. Furthermore, advances in cellular deconvolution techniques, such as CIBERSORTx, allow us to accurately determine the cellular composition of imaged localised biopsies from bulk RNA-Seq [@steen2020]. Understanding this heterogeneity and how the complex interactions between cellular populations impacts the progression of GBM may lead to novel treatments which exploit the unique cellular composition within individual tumours. We group these eighteen cell types into sub-populations, e.g., glioma, immune, astrocyte, then attempt to learn the dynamics of these sub-populations by considering various interacting ODE/PDE models. Typically, a GBM patient will have biopsies taken at most twice, as well as only a handful of MRI scans. Therefore, the number of temporal data points to fit any model to are very limited. Thus, we apply trajectory inference methods, such as Monocle, to biopsy data, which allows us to order samples via pseudotime, an arbitrary unit of progress akin to real time [@trapnell2014]. We illustrate our modelling approach with a simplified two species Lotka-Volterra style competition model. 
+
+
+# Poster
+
+<iframe
+ width = "800"
+ height = "600"
+ src = "SMB23_poster.pdf">
+</iframe>
+
+
+
+
+

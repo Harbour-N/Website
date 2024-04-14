@@ -41,9 +41,20 @@ author:
       name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
      
 date: 11-10-2023
-categories: [MathOnco, Bioinformatics, Published Abstract] 
+categories: [MathOnco, Bioinformatics, Published Abstract, First Author] 
 
-
+citation:
+  type: post
+  author: 
+    - name: Nicholas Harbour
+    - name: Lee Curtin
+    - name: Sebastian Velez
+    - name: Michael Chappell
+    - name: Matthew Hubbard
+    - name: Osama Al-Dalahmah
+    - name: Peter Canoll
+    - name: Markus Owen
+    - name: Kristin Swanson
 
 
 image: SNO23_UMAP.svg

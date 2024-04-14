@@ -30,6 +30,14 @@ date: 01-15-2024
 categories: [MathOnco, Preprint, MathBio] 
 
 
+citation:
+  type: post
+  author: 
+    - name: Dimitrios Katsaounis
+    - name: Nicholas Harbour
+    - name: Thomas Williams
+    - name: Mark Chaplain
+    - name: Nikolaos Sfakianakis
 
 
 image: image.jpg

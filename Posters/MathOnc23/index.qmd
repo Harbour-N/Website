@@ -2,24 +2,47 @@
 title: "Mathematical modelling of interacting sub-populations in glioblastoma"
 description: "MathOnc"
 author:
-  - name: "Nicholas Harbour"
+  - name: "**Nicholas Harbour**"
+    #url: string
     email: nicholas.harbour@nottingham.ac.uk
     orcid: 0009-0008-2424-4516
-    
     attributes:
       corresponding: True
     affiliations: 
       name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
       city: Nottingham
       country: UK
+  - name: Lee Curtin
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Michael Chappell
+    affiliations:
+      name: Precision Imaging Center, Universtiy of Nottingham, UK
+  - name: Matthew Hubbard
+    affiliations: 
+      name: School of Mathematical Sciences, University of Nottingham, UK
+  - name: Kristin Swanson
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Markus Owen
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
      
 date: 05-01-2023
-categories: [MathOnco, Bioinformatics, Pseudotime, GBM] 
+categories: [MathOnco, Bioinformatics, Pseudotime, GBM, Cancer] 
 
 
+citation:
+  type: post
+  author: 
+    - name: Nicholas Harbour
+    - name: Lee Curtin
+    - name: Michael Chappell
+    - name: Matthew Hubbard
+    - name: Kristin Swanson
+    - name: Markus Owen
 
-
-image: Picture5.jpg
+#image: Picture5.jpg
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 toc: False
 bibliography: references.bib
