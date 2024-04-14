@@ -1,6 +1,6 @@
 ---
 title: "A genuinely hybrid, multiscale 3D cancer invasion and metastasis modelling framework"
-doi: https://doi.org/10.1101/2024.01.12.575361
+doi: 10.1101/2024.01.12.575361
 description: "bioRxiv"
 # full author syntax
 author:
@@ -31,13 +31,14 @@ categories: [MathOnco, Preprint, MathBio]
 
 
 citation:
-  type: post
+  type: article-journal
   author: 
     - name: Dimitrios Katsaounis
     - name: Nicholas Harbour
     - name: Thomas Williams
     - name: Mark Chaplain
     - name: Nikolaos Sfakianakis
+  container-title: "bioRxiv"
 
 
 image: image.jpg

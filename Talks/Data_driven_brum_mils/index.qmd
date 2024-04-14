@@ -30,7 +30,7 @@ date: 12-11-2023 # month/day/year
 categories: [MathOnco, GBM, BMP4, Cancer Stem Cells, Glioma Stem Cells] 
 
 citation:
-  type: post
+  type: speech
   author: 
     - name: Nicholas Harbour
     - name: Lee Curtin
