@@ -1,18 +1,19 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/Perlin_noise/index.html"
-    ]
-  },
-  {
     "listing": "/Conferences.html",
     "items": [
       "/Talks/MathEpiOnco/index.html",
       "/Talks/Data_driven_brum_mils/index.html",
+      "/Posters/SNO23/index.html",
       "/Posters/IMO_workshop/index.html",
       "/Posters/SMB23_Ohio/index.html",
       "/Posters/MathOnc23/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Perlin_noise/index.html"
     ]
   },
   {
