@@ -5,8 +5,17 @@ discription: "Understranding the mathematics behind Perlin noise, with an implem
 author:
   - name: "Nicholas Harbour"
 
-date: 04-01-2024
+date: 04-15-2024
 categories: [Python, Maths] 
+
+# only re render when changes are made
+execute:
+  freeze: auto
+  
+citation:
+  type: post
+  author: 
+    - name: Nicholas Harbour
 # image: preview-image.jpeg
 ---
 
@@ -25,6 +34,8 @@ To gain a conceptual understanding of the algorithm, as is often the case, we im
 First we need to define a set of regularly spaced points (nodes) along a line. Below shows an example where $i=11$ nodes.
 
 ```{python}
+#| label: fig-define_noes
+#| fig-cap: "Define 11 evenly spaced nodes (blue stars) along the interval [0,10]."
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -46,6 +57,8 @@ plt.show()
 At each node we define a random vector with gradient $m_i$ (where $i = 1,2, …, 10$). For this article we will follow \[1\] arbitrarily take $-3 \leq m_i \leq 3$.
 
 ```{python}
+#| label: fig-genrate_random_grads
+#| fig-cap: "At each of the nodes define a random gradient (red lines)."
 # Step 2) At each node generate a random vector with
 # gradient m_i, arbritrarily set -3<= m_i <= 3
 a = -3
@@ -75,6 +88,10 @@ plt.show()
 If we consider an arbitrary point $x$ in within the interval $[p,r]$ (in the example below we consider the first interval $[0,1]$) and want to determine the point where the randomly generated vectors would intercept point $x$. If we denote $A$ the point where the random vector from the lower boundary of the interval will intercept then $A = (x, mₚ(x - p))$ and the point $B$ where the random vector from the upper node of the interval will intercept the point $x$ is given by $B = (x, - mᵣ(r- x))$. To simplify notation we will write $A = (x, n_p)$ and $B = (x, n_r)$ where we have taken: $n_p = m_p(x - p)$, and $n_r = - m_r(r - x)$.
 
 ```{python}
+#| label: fig-visualise_AB
+#| fig-cap: "Visualse the points A and B between the interval [0,1] that we will interpolate between to generate Perlin noise."
+
+
 # Step 3) consider a point x where x is between 0,1 (i.e. between our 1st and 2nd node)
 # the points A = (x,m_0x), B = (x, -m_1 (1-x))
 
@@ -114,13 +131,16 @@ This is the key step. In order to create smooth more natural looking noise we us
 
 $\text{noise}(x) = n_p + (n_r - n_p)f \left( \frac{x-r}{p-r} \right) = n_p \left(1 - f \left( \frac{x-r}{p-r} \right) \right) + n_r f \left( \frac{x-r}{p-r} \right)$
 
-We note that $\text{noise}(p) = \text{noise}(r) = 0$, this is a general property of the noise function and ensures continuity at each node. We also note that we have scaled the noise function according to the size and starting point of the interval, this ensures that the noise function is consistent between different interval sizes and starting points. Applying steps 1–4 across all the nodes we can create a different noise function between each interval. When we combine all the noise functions across the intervals together (concatenate them) we produce what is known as a single octave of Perlin noise. For a particular octave and interval we denote the noise function as $\text{noise}_s,t(x)$. Then for a particular octave ($s$) the combination of noise functions across all interval is given by
+We note that $\text{noise}(p) = \text{noise}(r) = 0$, this is a general property of the noise function and ensures continuity at each node. We also note that we have scaled the noise function according to the size and starting point of the interval, this ensures that the noise function is consistent between different interval sizes and starting points. Applying steps 1–4 across all the nodes we can create a different noise function between each interval. When we combine all the noise functions across the intervals together (concatenate them) we produce what is known as a single octave of Perlin noise. For a particular octave and interval we denote the noise function as $\text{noise}_{s,t}(x)$. Then for a particular octave ($s$) the combination of noise functions across all interval is given by
 
 $\text{Noise}_s(x) = \sum_{t=1}^{t=7} \text{noise}_{s,t}(x)$. 
 
 In order to produce more realistic/natural looking images we combine several octaves of Perlin noise. This is achieved by using a vertical scaling factor and by increasing the number of nodes in each successive octave. Thus octave two will have $20$ nodes, where the first interval will now be $[0,0.5]$ and the scaling factor will therefore be $0.5$. Below I have plotted the fisrt two octaves of Perlin noise.
 
 ```{python}
+#| label: fig-first_octave
+#| fig-cap: "First Octave of Perlin noise."
+
 # Step 4) use interpolation to find the value of the noise function at x
 # we will use the cubic interpolation function as in original Perlin noise
 # f(x) = 3x^2 - 2x^3
@@ -232,6 +252,9 @@ $equation = goeshearr 1+6$
 Lets combine the first two octaves of Perlin noise that we previously calculated.
 
 ```{python}
+#| label: fig-second_octave
+#| fig-cap: "Sum of first two octaves of perline noise."
+
 
 # Step 5) compute the weighted sum of two Octaves
 
@@ -251,6 +274,10 @@ plt.show()
 In practice we often combine 6 or more octaves. To do this we will write a function that combines all the previous steps and allows us to combine as many octaves as we wish.
 
 ```{python}
+#| label: fig-six_octaves
+#| fig-cap: "Sum of six octaves of Perlin noise."
+
+
 # Step 5) compute the weighted sum of T=6 octaves
 # to do this we will write a function that performs all the previous steps
 # and can then combine as many octaves as we want
@@ -318,7 +345,7 @@ def PerlinNoise1D(interval,numNodes,numOctaves,dx):
 interval = [0,10]
 numNodes =11;
 numOctaves = 6
-dx = 100000 #reduce this if taking a long time
+dx = 1000000 #reduce this if taking a long time
 test, t = PerlinNoise1D(interval, numNodes, numOctaves, dx)
 
 plt.figure()
@@ -338,12 +365,11 @@ Now that we have an understanding of how the algorithm works in 1D lets look at 
 
 ## Step 1
 
-Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector. @fig-plot
+Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector.
 
 ```{python}
-
-#| label: fig-plot
-#| fig-cap: "Plot"
+#| label: fig-define_random_vectors_2d
+#| fig-cap: "At each node (black dots) generate a random vector (red arrow)."
 
 x = np.arange(0,4,1)
 y = np.arange(0,4,1)
@@ -384,3 +410,6 @@ plt.yticks(y)
 plt.show()
 
 ```
+
+## Step 2
+
