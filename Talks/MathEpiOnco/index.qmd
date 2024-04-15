@@ -28,7 +28,7 @@ author:
       name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
 
 date: 02-18-2024
-categories: [MathOnco, GBM, Cancer Stem Cell, Virtual Clinical Trial, BMP4, Glioma Stem Cells] 
+categories: [MathOnco, GBM, Cancer Stem Cell, Virtual Clinical Trial, BMP4, Glioma Stem Cells, SMB] 
 
 citation:
   type: post

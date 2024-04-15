@@ -41,7 +41,7 @@ author:
       name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
      
 date: 07-16-2023 # month/day/year
-categories: [MathOnco, Bioinformatics, MathBio, GBM, Cell Cycle, Cancer] 
+categories: [MathOnco, Bioinformatics, MathBio, GBM, Cell Cycle, Cancer, SMB] 
 
 
 citation:

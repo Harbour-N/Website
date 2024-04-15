@@ -8,17 +8,16 @@
 
 <meta name="author" content="Nicholas Harbour">
 <meta name="author" content="Lee Curtin">
-<meta name="author" content="Sebastian Velez">
+<meta name="author" content="Carlos Perez-Vega">
 <meta name="author" content="Michael Chappell">
 <meta name="author" content="Matthew Hubbard">
-<meta name="author" content="Osama Al-Dalahmah">
-<meta name="author" content="Peter Canoll">
+<meta name="author" content="Alfredo Quinones-Hinojosa">
 <meta name="author" content="Kristin Swanson">
 <meta name="author" content="Markus Owen">
-<meta name="dcterms.date" content="2023-07-16">
-<meta name="description" content="Annual meeting of the Society for Mathematical Biology">
+<meta name="dcterms.date" content="2024-01-26">
+<meta name="description" content="Cancer research Nottingham symposium">
 
-<title>Nicholas Harbour - Mathematical modelling of cell cycle dynamics in glioblastoma subpopulations</title>
+<title>Nicholas Harbour - Virtual clinical trials of BMP4-induced differentiation therapy identify strategies for combination with radiation therapy for glioblastoma patients</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,27 +30,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -163,20 +142,20 @@ div.csl-indent {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Mathematical modelling of cell cycle dynamics in glioblastoma subpopulations</h1>
+      <h1 class="title">Virtual clinical trials of BMP4-induced differentiation therapy identify strategies for combination with radiation therapy for glioblastoma patients</h1>
                   <div>
         <div class="description">
-          Annual meeting of the Society for Mathematical Biology
+          Cancer research Nottingham symposium
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">MathOnco</div>
-                <div class="quarto-category">Bioinformatics</div>
                 <div class="quarto-category">MathBio</div>
                 <div class="quarto-category">GBM</div>
-                <div class="quarto-category">Cell Cycle</div>
                 <div class="quarto-category">Cancer</div>
-                <div class="quarto-category">SMB</div>
+                <div class="quarto-category">Cancer Stem Cells</div>
+                <div class="quarto-category">Glioma Stem Cells</div>
+                <div class="quarto-category">BMP4</div>
               </div>
                   </div>
   </div>
@@ -202,11 +181,11 @@ div.csl-indent {
             </p>
         </div>
       <div class="quarto-title-meta-contents">
-      <p class="author">Sebastian Velez </p>
+      <p class="author">Carlos Perez-Vega </p>
     </div>
     <div class="quarto-title-meta-contents">
           <p class="affiliation">
-              Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+              Department of Neurosurgery, Mayo Clinic, Jacksonville, FL, USA
             </p>
         </div>
       <div class="quarto-title-meta-contents">
@@ -226,19 +205,11 @@ div.csl-indent {
             </p>
         </div>
       <div class="quarto-title-meta-contents">
-      <p class="author">Osama Al-Dalahmah </p>
+      <p class="author">Alfredo Quinones-Hinojosa </p>
     </div>
     <div class="quarto-title-meta-contents">
           <p class="affiliation">
-              Columbia University Vagelos College of Physicians and Surgeons, NY, USA
-            </p>
-        </div>
-      <div class="quarto-title-meta-contents">
-      <p class="author">Peter Canoll </p>
-    </div>
-    <div class="quarto-title-meta-contents">
-          <p class="affiliation">
-              Columbia University Irving Medical Center, NY, USA
+              Department of Neurosurgery, Mayo Clinic, Jacksonville, FL, USA
             </p>
         </div>
       <div class="quarto-title-meta-contents">
@@ -265,7 +236,7 @@ div.csl-indent {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 16, 2023</p>
+        <p class="date">January 26, 2024</p>
       </div>
     </div>
     
@@ -286,42 +257,32 @@ div.csl-indent {
 
 <section id="abstract" class="level1">
 <h1>Abstract</h1>
-<p>One of the major challenges in successfully treating glioblastoma (GBM) is the significant heterogeneity in cellular composition observed within and between patients. Recent single cell transcriptomics suggests there can be as many as eighteen distinct cell types in a single tumour <span class="citation" data-cites="al-dalahmah2021">(<a href="#ref-al-dalahmah2021" role="doc-biblioref">Al-Dalahmah et al. 2021</a>)</span>. Furthermore, advances in cellular deconvolution techniques, such as CIBERSORTx, allow us to accurately determine the cellular composition of imaged localised biopsies from bulk RNA-Seq <span class="citation" data-cites="steen2020">(<a href="#ref-steen2020" role="doc-biblioref">Steen et al. 2020</a>)</span>. Understanding this heterogeneity and how the complex interactions between cellular populations impacts the progression of GBM may lead to novel treatments which exploit the unique cellular composition within individual tumours. We group these eighteen cell types into sub-populations, e.g., glioma, immune, astrocyte, then attempt to learn the dynamics of these sub-populations by considering various interacting ODE/PDE models. Typically, a GBM patient will have biopsies taken at most twice, as well as only a handful of MRI scans. Therefore, the number of temporal data points to fit any model to are very limited. Thus, we apply trajectory inference methods, such as Monocle, to biopsy data, which allows us to order samples via pseudotime, an arbitrary unit of progress akin to real time <span class="citation" data-cites="trapnell2014">(<a href="#ref-trapnell2014" role="doc-biblioref">Trapnell et al. 2014</a>)</span>. We illustrate our modelling approach with a simplified two species Lotka-Volterra style competition model.</p>
+<p>GBM is the most aggressive and most common primary brain tumour in adults and is uniformly fatal, with a poor median survival time of 15 months. Standard of care for GBM consist of surgical resection followed by radio and chemotherapy, despite this resistance to treatment almost always occurs making recurrence inevitable. Failure of the current standard of care has been partly attributed to a special sub-population, the glioma stem cells (GSCs), which initiate and drive tumour growth. Treatment cannot be successful unless all GSCs are eliminated. However, GSCs are known to be highly resistant to radiotherapy. New treatments that specifically target GSCs could have a potentially large benefit. BMP4 is known to induce differentiation of GSCs towards a less malignant, astrocytic-like lineage. Furthermore, new delivery systems (non-virally engineered adipose mesenchymal cells) provide a potential mechanism by which BMP4 could be successfully administered to reverse the GSC state and increase radio-sensitivity in patients. We develop a data-driven mechanistic mathematical model to create digital twins from patient data on which we perform in silico clinical trials to identify patient specific optimised treatment strategies.</p>
 </section>
 <section id="poster" class="level1">
 <h1>Poster</h1>
-<iframe width="800" height="600" src="SMB23_poster.pdf">
+<iframe width="800" height="600" src="IMO23_poster.pdf">
 </iframe>
-
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-al-dalahmah2021" class="csl-entry" role="listitem">
-Al-Dalahmah, Osama, Michael G. Argenziano, Adithya Kannan, Aayushi Mahajan, Julia Furnari, Fahad Paryani, Deborah Boyett, et al. 2021. <span>“Re-Convolving the Compositional Landscape of Primary and Recurrent Glioblastoma Reveals Prognostic and Targetable Tissue States.”</span> <a href="http://dx.doi.org/10.1101/2021.07.06.451295">http://dx.doi.org/10.1101/2021.07.06.451295</a>.
-</div>
-<div id="ref-steen2020" class="csl-entry" role="listitem">
-Steen, Chloé B., Chih Long Liu, Ash A. Alizadeh, and Aaron M. Newman. 2020. <span>“Profiling Cell Type Abundance and Expression in Bulk Tissues with CIBERSORTx.”</span> In, 135–57. Springer US. <a href="https://doi.org/10.1007/978-1-0716-0301-7_7">https://doi.org/10.1007/978-1-0716-0301-7_7</a>.
-</div>
-<div id="ref-trapnell2014" class="csl-entry" role="listitem">
-Trapnell, Cole, Davide Cacchiarelli, Jonna Grimsby, Prapti Pokharel, Shuqiang Li, Michael Morse, Niall J Lennon, Kenneth J Livak, Tarjei S Mikkelsen, and John L Rinn. 2014. <span>“The Dynamics and Regulators of Cell Fate Decisions Are Revealed by Pseudotemporal Ordering of Single Cells.”</span> <em>Nature Biotechnology</em> 32 (4): 381–86. <a href="https://doi.org/10.1038/nbt.2859">https://doi.org/10.1038/nbt.2859</a>.
-</div>
-</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{harbour2023,
-  author = {Harbour, Nicholas and Curtin, Lee and Velez, Sebastian and
-    Chappell, Michael and Hubbard, Matthew and Al-Dalahmah, Osama and
-    Canoll, Peter and Swanson, Kristin and Owen, Markus},
-  title = {Mathematical Modelling of Cell Cycle Dynamics in Glioblastoma
-    Subpopulations},
-  date = {2023-07-16},
-  url = {https://2023.smb.org/ONCO/PS01-ONCO-12.html},
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@misc{harbour2024,
+  author = {Harbour, Nicholas and Curtin, Lee and Perez-Vega, Carlos and
+    Chappell, Michael and Hubbard, Matthew and Quinones-Hinojosa,
+    Alfredo and Swanson, Kristin and Owen, Markus},
+  title = {{Virtual} Clinical Trials of {BMP4-induced} Differentiation
+    Therapy Identify Strategies for Combination with Radiation Therapy
+    for Glioblastoma Patients},
+  date = {2024-01-26},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-harbour2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Harbour, Nicholas, Lee Curtin, Sebastian Velez, Michael Chappell,
-Matthew Hubbard, Osama Al-Dalahmah, Peter Canoll, Kristin Swanson, and
-Markus Owen. 2023. <span>“Mathematical Modelling of Cell Cycle Dynamics
-in Glioblastoma Subpopulations.”</span> <a href="https://2023.smb.org/ONCO/PS01-ONCO-12.html">https://2023.smb.org/ONCO/PS01-ONCO-12.html</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-harbour2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Harbour, Nicholas, Lee Curtin, Carlos Perez-Vega, Michael Chappell,
+Matthew Hubbard, Alfredo Quinones-Hinojosa, Kristin Swanson, and Markus
+Owen. 2024.<span>“ Virtual Clinical Trials of BMP4-Induced
+Differentiation Therapy Identify Strategies for Combination with
+Radiation Therapy for Glioblastoma Patients.”</span>
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

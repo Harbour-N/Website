@@ -1,0 +1,75 @@
+---
+title: " Virtual clinical trials of BMP4-induced differentiation therapy identify strategies for combination with
+ radiation therapy for glioblastoma patients"
+# confence = description
+description: "Cancer research Nottingham symposium"
+# full author syntax
+author:
+  - name: "**Nicholas Harbour**"
+    email: nicholas.harbour@nottingham.ac.uk
+    orcid: 0009-0008-2424-4516
+    attributes:
+      corresponding: True
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+      city: Nottingham
+      country: UK
+  - name: Lee Curtin
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Carlos Perez-Vega
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic, Jacksonville, FL, USA
+  - name: Michael Chappell
+    affiliations:
+      name: Precision Imaging Center, Universtiy of Nottingham, UK
+  - name: Matthew Hubbard
+    affiliations: 
+      name: School of Mathematical Sciences, University of Nottingham, UK
+  - name: Alfredo Quinones-Hinojosa
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic, Jacksonville, FL, USA
+  - name: Kristin Swanson
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinci, AZ, USA
+  - name: Markus Owen
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+     
+date: 01-26-2024 # month/day/year
+categories: [MathOnco, MathBio, GBM, Cancer, Cancer Stem Cells, Glioma Stem Cells, BMP4] 
+
+
+citation:
+  type: post
+  author: 
+    - name: Nicholas Harbour
+    - name: Lee Curtin
+    - name: Carlos Perez-Vega
+    - name: Michael Chappell
+    - name: Matthew Hubbard
+    - name: Alfredo Quinones-Hinojosa
+    - name: Kristin Swanson
+    - name: Markus Owen
+
+
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+toc: False
+---
+
+# Abstract
+
+GBM is the most aggressive and most common primary brain tumour in adults and is uniformly fatal, with a poor median survival time of 15 months. Standard of care for GBM consist of surgical resection followed by radio and chemotherapy, despite this resistance to treatment almost always occurs making recurrence inevitable. Failure of the current standard of care has been partly attributed to a special sub-population, the glioma stem cells (GSCs), which initiate and drive tumour growth. Treatment cannot be successful unless all GSCs are eliminated. However, GSCs are known to be highly resistant to radiotherapy. New treatments that specifically target GSCs could have a potentially large benefit. BMP4 is known to induce differentiation of GSCs towards a less malignant, astrocytic-like lineage. Furthermore, new delivery systems (non-virally engineered adipose mesenchymal cells) provide a potential mechanism by which BMP4 could be successfully administered to reverse the GSC state and increase radio-sensitivity in patients. We develop a data-driven mechanistic mathematical model to create digital twins from patient data on which we perform in silico clinical trials to identify patient specific optimised treatment strategies.
+
+# Poster
+
+<iframe
+ width = "800"
+ height = "600"
+ src = "IMO23_poster.pdf">
+</iframe>
+
+
+
+
+
