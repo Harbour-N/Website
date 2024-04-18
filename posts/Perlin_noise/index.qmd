@@ -1,5 +1,5 @@
 ---
-title: "The Mathematics of Perlin noise"
+title: "The Mathematics of Perlin noise, and implentation in Python"
 discription: "Understranding the mathematics behind Perlin noise, with an implementation in python"
 
 author:
@@ -11,7 +11,9 @@ categories: [Python, Maths]
 # only re render when changes are made
 execute:
   freeze: auto
-  
+
+bibliography: references.bib 
+
 citation:
   type: post
   author: 
@@ -21,7 +23,7 @@ citation:
 
 Perlin noise is a versatile and widely-used algorithm in computer graphics and simulation, renowned for generating natural-looking patterns and smooth transitions. Perlin developed his algorithm in the 1980s while working on Disney's animated film Tron (1982), in order to improve the realism of computer generated imagery (CGI) at the time. Perlin received the Academy Award for Technical Achievement for his algorithm, who knew that mathematician/computer sicentists win Oscars too!
 
-This post is inspired by an article in the IMA's mathematics today \[1\], which focused on the mathematics used in video games. In this post I follow the authors description of Perlins algorithm, and provide example code to implement this algorithm in Python using only Numpy (and Matplotlib for visualisation).
+This post is inspired by an article in the IMA's mathematics today [@Bason2024] , which focused on the mathematics used in video games. In this post I follow the authors description of Perlins algorithm, and provide example code to implement this algorithm in Python using only Numpy (and Matplotlib for visualisation).
 
 Add a Pic of normal noise compared to Perlin noise
 
@@ -345,7 +347,7 @@ def PerlinNoise1D(interval,numNodes,numOctaves,dx):
 interval = [0,10]
 numNodes =11;
 numOctaves = 6
-dx = 1000000 #reduce this if taking a long time
+dx = 100000 #reduce this if taking a long time
 test, t = PerlinNoise1D(interval, numNodes, numOctaves, dx)
 
 plt.figure()
@@ -361,11 +363,11 @@ Combining more octaves produces more fractal-like noise as finer structures are 
 
 # The algorithm in two dimensions: {#sec-the-algorithm-in-two-dimensions}
 
-Now that we have an understanding of how the algorithm works in 1D lets look at how it generalises to 2D.
+Now that we have an understanding of how the algorithm works in 1D lets look at how it generalises to 2D. We denote the noise function in 2D as $P(x,y)$.
 
 ## Step 1
 
-Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector.
+Similarlly to the 1D case we start by generating a set of nodes, in the 2D case this will now be a grid of nodes. At each node we generate a random vector. We denote the two components of the rrandom vector at node $i,j$ as $(m_{i,j}, n_{i,j})$.
 
 ```{python}
 #| label: fig-define_random_vectors_2d
@@ -413,3 +415,58 @@ plt.show()
 
 ## Step 2
 
+To calculate the value of the Noise function $P(x,y)$ at a given location (blue star), we first locate the four grid points closest to $P(x,y)$. We then form a vector from  each of the four selected grid points to $P(x,y)$ (green arrows). Each vectors can be expressed in terms of $u$ and $v$, where $u$ represent the horizontal distance (i.e. $u =i + P(x,y)$) and $v$ the virtical distance (i.e. $v = j + P(x,y)$). 
+
+```{python}
+#| label: fig-find-uv
+#| fig-cap: "At a given point (x,y) (blue star) find the four nearest grid nodes (black dots). From each grid node form a vector to the point (x,y) (green arrows), which can be expressed in terms of $u$ and $v$."
+
+# take P(x,y) to be at (x,y) = (0.6,0.6)
+P = [0.6,0.6]
+
+# subset of nodes
+x_ = [0,1]
+y_ = [0,1]
+
+X_, Y_ = np.meshgrid(x_,y_)
+
+# in this example i = 0, j  = 0
+u = P[0] + 0 # u = P + i
+v = (0) + P[1] # v = j + P
+
+
+
+
+plt.plot(P[0],P[1],'b*', markersize = 10)
+plt.plot(X_,Y_,'k*')
+plt.hlines(y = 0, xmin = -0.1, xmax = 1.1,color='k', linestyles='--')
+plt.hlines(y = 1, xmin = -0.1, xmax = 1.1, color='k', linestyles='--')
+plt.vlines(x = 0, ymin = -0.1, ymax = 1.1,color='k', linestyles='--')
+plt.vlines(x = 1, ymin = -0.1, ymax = 1.1, color='k', linestyles='--')
+
+plt.arrow(0,0,u,v, color = "g", length_includes_head= True, head_width = 0.02)
+plt.arrow(0,1,u,-(1-v), color = "g", length_includes_head= True, head_width = 0.02)
+plt.arrow(1,0,-(1-u),v, color = "g", length_includes_head= True, head_width = 0.02)
+plt.arrow(1,1,-(1-u),-(1-v), color = "g", length_includes_head= True, head_width = 0.02)
+
+# add the random arrows to the plot
+p = 0
+for i in range(len(x_)):
+    for j in range(len(y_)):
+    
+        plt.arrow(x_[i],y_[j],V[p,0],V[p,1], color = "r", length_includes_head= True, head_width = 0.02)
+        p = p +1
+    
+plt.xticks([0,0.6,1], ["$i$", "$P(x,y)$", "$i+1$"])
+plt.yticks([0,0.6,1], ["$j$", "$P(x,y)$", "$j+1$"])
+
+plt.show()
+    
+```
+
+
+
+# References
+
+::: {#refs}
+:::
