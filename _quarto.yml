@@ -6,6 +6,7 @@ website:
   title: "Nicholas Harbour"
   #site-url: https://www.nicholas-harbour.com
   search: true # use this line to remove search bar
+  google-analytics: "G-JM1S3R3NRW"
   page-footer: 
     left: "Nicholas Harbour" 
     right: 
