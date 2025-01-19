@@ -3,7 +3,6 @@ title: "A mathematical model for BMP4 induced differentiation therapy in combina
  glioblastoma"
 # confence = description
 description: " Society of Industrial and Applied Mathematics (SIAM) UK and Ireland Section Meeting"
-subtitle: "University of Manchester, UK"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"

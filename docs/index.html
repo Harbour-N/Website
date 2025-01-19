@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.33">
+<meta name="generator" content="quarto-1.4.552">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,10 +34,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2fd4facbcc6f7220a14ebf660c0fd5d6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e988426342ea56444ddd7ca9e7ce976e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -92,7 +92,7 @@ gtag('config', 'G-JM1S3R3NRW', { 'anonymize_ip': true});
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -131,7 +131,7 @@ gtag('config', 'G-JM1S3R3NRW', { 'anonymize_ip': true});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+          <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -142,7 +142,7 @@ gtag('config', 'G-JM1S3R3NRW', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
+<div class="quarto-about-trestles content">
   <div class="about-entity">
     <img src="photo.jpeg" class="about-image
   rounded " style="width: 20em;">
@@ -172,15 +172,6 @@ gtag('config', 'G-JM1S3R3NRW', { 'anonymize_ip': true});
 <section id="bio" class="level1">
 <h1>Bio</h1>
 <p>I am a PhD student at the university of Nottingham, based in the Centre for Mathematical Medicine and Biology (CMMB). My research focuses on using mathematical modelling, bioinformatics, data science and machine learning to better understand cancer and improve treatment outcomes.</p>
-</section>
-<section id="news-and-updates" class="level1">
-<h1>News and updates</h1>
-<ul>
-<li><p><strong>June 2025</strong> – I am organizing a mini-symposium on “Mathematical modelling in cancer” at <a href="https://sites.exeter.ac.uk/bmc-bamc2025/">BMC-BAMC 2025 in Exeter</a>. Please contact me for more information.</p></li>
-<li><p><strong>January 2025</strong> – I will be taking part in the <a href="https://www.turing.ac.uk/work-turing/studentships/enrichment">Alan Turing PhD enrichment scheme</a>, this is a 6 months placement where I will be based (part time) at the Alan Turing institute in the British Library, London, UK. You can see my profile <a href="https://www.turing.ac.uk/people/doctoral-students/nicholas-harbour">here</a></p></li>
-<li><p><strong>July 2024</strong> – I received a <a href="https://www.smb.org/Annual-Meeting-Travel-Awards">Landahl</a> travel scholarship to attend and give a contributed talk at <a href="https://www.smb2024.org/index.asp">SMB/KSMB annual meeting</a> at Konkuk University, Seoul, Republic of Korea. See my presentation slides <a href="">here</a></p></li>
-<li><p><strong>June 2024</strong> – I present the University of Nottingham Center for Mathematical Medicine and Biology (CMMB) entry in the datathon hosted by University of Exeter: <a href="https://wolfbyttner.github.io/exeter-quantitative-modelling/">Quantifying heterogeneity and variability in human daily rhythms</a>. We won a amazon gift voucher prize for the category “Best negative result”. Many thanks to all my team mates: Oliver Cattell, Aaron Pache, Markus Owen, Simon Preston and Yordan Raykov!</p></li>
-</ul>
 
 
 </section>
@@ -215,7 +206,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -247,29 +249,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -277,7 +257,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

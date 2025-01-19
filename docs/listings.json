@@ -1,22 +1,7 @@
 [
   {
-    "listing": "/blog.html",
-    "items": [
-      "/posts/Perlin_noise/index.html"
-    ]
-  },
-  {
-    "listing": "/Publications.html",
-    "items": [
-      "/publications/hybrid_plus/index.html",
-      "/preprints/BMP4_virtual_trials/index.html",
-      "/published_abstracts/cell_cycle_tricycle/index.html"
-    ]
-  },
-  {
     "listing": "/Conferences.html",
     "items": [
-      "/Talks/SMB24_Korea/index.html",
       "/Talks/MathEpiOnco/index.html",
       "/Talks/Data_driven_brum_mils/index.html",
       "/Posters/SIAM_UK/index.html",
@@ -25,6 +10,19 @@
       "/Posters/IMO_workshop/index.html",
       "/Posters/SMB23_Ohio/index.html",
       "/Posters/MathOnc23/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/posts/Perlin_noise/index.html"
+    ]
+  },
+  {
+    "listing": "/Publications.html",
+    "items": [
+      "/preprints/hybrid_plus/index.html",
+      "/published_abstracts/cell_cycle_tricycle/index.html"
     ]
   }
 ]

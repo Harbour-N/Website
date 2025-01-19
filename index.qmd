@@ -19,12 +19,3 @@ about:
 # Bio
 
 I am a PhD student at the university of Nottingham, based in the Centre for Mathematical Medicine and Biology (CMMB). My research focuses on using mathematical modelling, bioinformatics, data science and machine learning to better understand cancer and improve treatment outcomes.
-
-
-# News and updates
-
-- **June 2025** -- I am organizing a mini-symposium on "Mathematical modelling in cancer" at [BMC-BAMC 2025 in Exeter](https://sites.exeter.ac.uk/bmc-bamc2025/). Please contact me for more information.
-
-- **January 2025** -- I will be taking part in the [Alan Turing PhD enrichment scheme](https://www.turing.ac.uk/work-turing/studentships/enrichment), this is a 6 months placement where I will be based (part time) at the Alan Turing institute in the British Library, London, UK. You can see my profile [here](https://www.turing.ac.uk/people/doctoral-students/nicholas-harbour) 
-- **July 2024** -- I received a [Landahl](https://www.smb.org/Annual-Meeting-Travel-Awards) travel scholarship to attend and give a contributed talk at [SMB/KSMB annual meeting](https://www.smb2024.org/index.asp) at Konkuk University, Seoul, Republic of Korea. See my presentation slides [here]()
-- **June 2024** -- I present the University of Nottingham Center for Mathematical Medicine and Biology (CMMB) entry in the datathon hosted by University of Exeter: [Quantifying heterogeneity and variability in human daily rhythms](https://wolfbyttner.github.io/exeter-quantitative-modelling/). We won a amazon gift voucher prize for the category "Best negative result". Many thanks to all my team mates: Oliver Cattell, Aaron Pache, Markus Owen, Simon Preston and Yordan Raykov!
