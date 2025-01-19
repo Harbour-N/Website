@@ -2,6 +2,7 @@
 title: "A mathematical model for BMP4 induced differentiation therapy in combination with radiotherapy
  in glioblastoma"
 description: "Data-driven mechanistic models of complex biomedical systems"
+subtitle: "University of Birmingham, UK"
 author:
   - name: "**Nicholas Harbour**"
     #url: string

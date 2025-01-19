@@ -3,6 +3,7 @@ title: " Virtual clinical trials of BMP4-induced differentiation therapy identif
  radiation therapy for glioblastoma patients"
 # confence = description
 description: "Cancer research Nottingham symposium"
+subtitle: "University of Nottingham, UK"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"

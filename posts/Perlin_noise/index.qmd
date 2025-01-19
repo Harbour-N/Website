@@ -1,5 +1,5 @@
 ---
-title: "The Mathematics of Perlin noise, and implentation in Python"
+title: "Perlin noise -- the mathematicas of minecraft"
 discription: "Understranding the mathematics behind Perlin noise, with an implementation in python"
 
 author:
@@ -375,10 +375,8 @@ Similarlly to the 1D case we start by generating a set of nodes, in the 2D case 
 
 x = np.arange(0,4,1)
 y = np.arange(0,4,1)
-
 # In 2D are nodes are now a grid
 X,Y = np.meshgrid(x,y)
-
 
 a = -3
 b = 3
@@ -391,10 +389,8 @@ for i in range(len(V[:,0])):
 
 # scale the unit vectors to look nicer in the plot
 V = V*0.4
-
 # loop variable
 p = 0
-
 plt.plot(X,Y,'o',color = 'k')
 
 for i in range(len(x)):
@@ -403,19 +399,17 @@ for i in range(len(x)):
         plt.arrow(x[i],y[j],V[p,0],V[p,1], color = "r", length_includes_head= True, head_width = 0.05)
         p = p +1
 
-
 plt.title("Generate a random grid of vectors")
 plt.xlabel("x")
 plt.ylabel("y")
 plt.xticks(x)
 plt.yticks(y)
 plt.show()
-
 ```
 
 ## Step 2
 
-To calculate the value of the Noise function $P(x,y)$ at a given location (blue star), we first locate the four grid points closest to $P(x,y)$. We then form a vector from  each of the four selected grid points to $P(x,y)$ (green arrows). Each vectors can be expressed in terms of $u$ and $v$, where $u$ represent the horizontal distance (i.e. $u =i + P(x,y)$) and $v$ the virtical distance (i.e. $v = j + P(x,y)$). 
+To calculate the value of the Noise function $P(x,y)$ at a given location (blue star), we first locate the four grid points closest to $P(x,y)$. We then form a vector from each of the four selected grid points to $P(x,y)$ (green arrows). Each vectors can be expressed in terms of $u$ and $v$, where $u$ represent the horizontal distance (i.e. $u =i + P(x,y)$) and $v$ the virtical distance (i.e. $v = j + P(x,y)$).
 
 ```{python}
 #| label: fig-find-uv
@@ -427,27 +421,33 @@ P = [0.6,0.6]
 # subset of nodes
 x_ = [0,1]
 y_ = [0,1]
-
 X_, Y_ = np.meshgrid(x_,y_)
 
 # in this example i = 0, j  = 0
 u = P[0] + 0 # u = P + i
 v = (0) + P[1] # v = j + P
 
-
-
-
 plt.plot(P[0],P[1],'b*', markersize = 10)
 plt.plot(X_,Y_,'k*')
-plt.hlines(y = 0, xmin = -0.1, xmax = 1.1,color='k', linestyles='--')
-plt.hlines(y = 1, xmin = -0.1, xmax = 1.1, color='k', linestyles='--')
-plt.vlines(x = 0, ymin = -0.1, ymax = 1.1,color='k', linestyles='--')
-plt.vlines(x = 1, ymin = -0.1, ymax = 1.1, color='k', linestyles='--')
+plt.hlines(y = 0, xmin = -0.2, xmax = 1.2,color='k', linestyles='--')
+plt.hlines(y = 1, xmin = -0.2, xmax = 1.2, color='k', linestyles='--')
+plt.vlines(x = 0, ymin = -0.2, ymax = 1.2,color='k', linestyles='--')
+plt.vlines(x = 1, ymin = -0.2, ymax = 1.2, color='k', linestyles='--')
 
 plt.arrow(0,0,u,v, color = "g", length_includes_head= True, head_width = 0.02)
 plt.arrow(0,1,u,-(1-v), color = "g", length_includes_head= True, head_width = 0.02)
 plt.arrow(1,0,-(1-u),v, color = "g", length_includes_head= True, head_width = 0.02)
 plt.arrow(1,1,-(1-u),-(1-v), color = "g", length_includes_head= True, head_width = 0.02)
+
+# plot an arrow to show u and v
+plt.arrow(0,-0.1,0.6,0, color = "grey", length_includes_head= True, head_width = 0.02)
+plt.arrow(-0.1,0,0,0.6, color = "grey", length_includes_head= True, head_width = 0.02)
+# one way to get double headed arrow is to plot two arrows in opposite directions
+plt.arrow(0.6,-0.1,-0.6,0, color = "grey", length_includes_head= True, head_width = 0.02)
+plt.arrow(-0.1,0.6,0,-0.6, color = "grey", length_includes_head= True, head_width = 0.02)
+plt.annotate("$u$", (0.3,-0.08))
+plt.annotate("$v$", (-0.08,0.3))
+
 
 # add the random arrows to the plot
 p = 0
@@ -459,10 +459,26 @@ for i in range(len(x_)):
     
 plt.xticks([0,0.6,1], ["$i$", "$P(x,y)$", "$i+1$"])
 plt.yticks([0,0.6,1], ["$j$", "$P(x,y)$", "$j+1$"])
-
 plt.show()
-    
 ```
+
+## Step 3
+
+Compute the dot product at each of the 4 selected grid points between the randomly generated vectors (i.e. the red arrows) and the vectors to the specific point $P(x,y)$ (i.e. the green arrows). Specifically using the $(u,v)$ notation above, at point $(i,j)$ the requiered dot producr is given by
+
+$$
+    d_{i,j} = (m_{i,j}, n_{i,j}) \cdot (u,v)
+$$
+
+Similarly at point $(i+1,j)$, $(i,j+1)$ and $(i+1,j+1)$ the respective dot products are given by:
+
+$$
+    \begin{align*}
+        d_{i+1,j} &= (m_{i+1,j}, n_{i+1,j}) \cdot (u-1,v) \\
+        d_{i,j+1} &= (m_{i,j+1}, n_{i,j+1}) \cdot (u,v-1) \\
+        d_{i+1,j+1} &= (m_{i+1,j+1}, n_{i+1,j+1}) \cdot (u-1,v-1) \\
+    \end{align*}
+$$
 
 
 

@@ -1,6 +1,7 @@
 ---
 title: "Mathematical modelling of interacting sub-populations in glioblastoma"
 description: "MathOnc"
+subtitle: "Mayo Clinic, Pheonix, AZ, USA"
 author:
   - name: "**Nicholas Harbour**"
     #url: string

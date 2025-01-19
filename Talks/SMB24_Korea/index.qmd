@@ -1,0 +1,62 @@
+---
+title: "Mathematical model for BMP4 induced differentiation therapy in glioblastoma"
+description: "Annual Meeting of the Society for Mathematical Biology (joint with Korean Society for Mathematical Biology)"
+subtitle: "Konkuk University, Seoul, South Korea"
+# full author syntax
+author:
+  - name: "**Nicholas Harbour**"
+    #url: string
+    email: nicholas.harbour@nottingham.ac.uk
+    orcid: 0009-0008-2424-4516
+    attributes:
+      corresponding: True
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+      city: Nottingham
+      country: UK
+  - name: Lee Curtin
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinic, AZ, USA
+  - name: Alfredo Quinones-Hinojosa
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic Florida, USA
+  - name: Matthew Hubbard
+    affiliations: 
+      name: School of Mathematical Sciences, University of Nottingham, UK
+  - name: Kristin Swanson
+    affiliations: 
+      name: Mathematical Neuro-Oncology Lab, Mayo Clinic, AZ, USA
+  - name: Markus Owen
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+
+date: 07-01-2024
+categories: [MathOnco, GBM, Cancer Stem Cell, Virtual Clinical Trial, BMP4, Glioma Stem Cells, SMB] 
+
+citation:
+  type: post
+  author: 
+    - name: Nicholas Harbour
+    - name: Lee Curtin
+    - name: Alfredo Quinones-Hinojosa
+    - name: Matthew Hubbard
+    - name: Kristin Swanson
+    - name: Markus Owen
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+toc: False
+---
+
+# Abstract
+
+Glioblastoma (GBM) is the most aggressive and most common primary brain tumour in adults and is uniformly fatal, with a poor median survival time of 15 months and 5-year survival rates of only 5%. Standard of care for GBM consist of radiotherapy either alone or following surgical resection, despite this, radio-resistance almost always occurs making recurrence inevitable. Failure of the current standard of care has been partly attributed to a special sub-population, the glioma stem cells (GSCs), which initiate and drive tumour growth. Treatment cannot be successful unless all GSCs are eliminated. However, GSCs are known to be highly resistant to radiotherapy, and complete surgical removal is usually impossible in GBM. Therefore, new treatments that specifically target the GSCs could have a potentially large benefit. BMP4 has been shown to induce differentiation of GSCs towards a less malignant, astrocytic-like (ALCs) lineage. Furthermore, new delivery systems (nano particles) provide a potential mechanism by which BMP4 could be successfully administered to reverse the GSC state and reduce radio-resistance in a patient. We develop a data driven mechanistic mathematical model that accounts for the GSCs, tumour cells (TCs) and ALCs as well as their response to both radiotherapy and BMP4 induced differentiation therapy. Our model allows us to run in-silico experiments to investigate how varying several key parameters such as: the radiosensitivity of all cellular populations and the strength of BMP4 on differentiation rate, affect treatment outcome. Our model shows that treatments specifically targeting the GSCs are vital for prolonging survival in GBM and that a combination of both BMP4 therapy and radiotherapy can provide superior outcomes than either one individually.
+
+
+# Slides
+
+<iframe
+ width = "800"
+ height = "600"
+ src = "SMB24_presentation.pdf">
+</iframe>
+
+
