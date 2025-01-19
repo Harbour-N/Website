@@ -3,6 +3,7 @@ title: "Conferences"
 language:
   listing-page-field-description: "Conference"
   listing-page-field-author: "Author(s)"
+  listing-page-field-subtitle: "Location"
 date-format: short
 listing:
   - id: talks
@@ -10,7 +11,7 @@ listing:
     type: table # or `default` or `table` or 'grid' or 'custom'; each type has its own set of yaml options to include
     sort: "date desc" # can also sort on more than one field
     categories: true # allows you to sort posts by assigned categories 
-    fields: [date, title, author, description]
+    fields: [date, title, description, subtitle]
     filter-ui: False
 
   - id: posters
@@ -18,7 +19,7 @@ listing:
     type: table # or `default` or `table` or 'grid' or 'custom'; each type has its own set of yaml options to include
     sort: "date desc" # can also sort on more than one field
     categories: true # allows you to sort posts by assigned categories 
-    fields: [date, title, author, description]
+    fields: [date, title, description, subtitle]
     filter-ui: False
 ---
 

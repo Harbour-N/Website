@@ -2,6 +2,7 @@
 title: "A mathematical model for BMP4 induced differentiation therapy in combination with radiotherapy in glioblastoma"
 # confence = description
 description: "Integrated Mathematical Oncology (IMO) Workshop 11: Steering Evolution/Extinction"
+subtitle: "Moffitt Cancer Center, Tampa, FL, USA"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"

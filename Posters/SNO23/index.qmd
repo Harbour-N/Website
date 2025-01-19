@@ -1,7 +1,8 @@
 ---
-title: "INFERENCE OF CELL CYCLE REGULATION BETWEEN GLIOBLASTOMA SUBPOPULATIONS IN VIVO TO DRIVE COMPUTATIONAL AND MATHEMATICAL MODELS OF THE CANCER COMPLEX SYSTEM"
+title: "Inference of cell cycle regulation between glioblastoma subpopulations in vivo to drive computational and mathematical models of the cancer complex system"
 doi: 10.1093/neuonc/noad179.0150
 description: " 28th Annual Scientific Meeting of the Society for Neuro-Oncology"
+subtitle: "Vancover, BC, Canada"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"

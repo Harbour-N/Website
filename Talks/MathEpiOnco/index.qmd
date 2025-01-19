@@ -2,6 +2,7 @@
 title: "Virtual clinical trials of BMP4-induced differentiation therapy identify strategies for combination
  with radiation therapy for glioblastoma patients"
 description: "Society of Mathematical Biology MathEpiOnco joint meeting"
+subtitle: "Online"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"

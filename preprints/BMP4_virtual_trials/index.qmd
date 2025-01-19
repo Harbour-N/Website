@@ -1,0 +1,86 @@
+---
+title: "Virtual Clinical Trials of BMP4 Differentiation Therapy: Digital Twins to Aid Glioblastoma Trial Design"
+doi: 10.1101/2024.08.22.609156
+description: "BioXriv"
+# full author syntax
+author:
+  - name: "**Nicholas Harbour**"
+    orcid: 0009-0008-2424-4516
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+      city: Nottingham
+      country: UK
+  - name: Lee Curtin
+    affiliations: 
+      name: Mathematical Neuro-Oncology lab, Mayo Clinic Phoenix, AZ, USA
+  - name: Matthew E Hubbard
+    orcid: 0
+    affiliations: 
+      name: School of Mathematical Sciences, University of Nottingham, UK
+  - name: Pamela R Jackson
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Mathematical Neuro-Oncology lab, Mayo Clinic Phoenix, AZ, USA
+  - name: Vinitha Rani
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic Jacksonville, FL, USA
+  - name: Rajappa S Kenchappa
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic Jacksonville, FL, USA
+  - name: Virginea Araujo Farias
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic Jacksonville, FL, USA
+  - name: Anna Carrano
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic Jacksonville, FL, USA
+  - name: Alfredo Quinones-Hinojosa
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Department of Neurosurgery, Mayo Clinic Jacksonville, FL, USA
+  - name: "Markus Owen"
+    orcid: 0009-0008-2424-4516
+    affiliations: 
+      name: Center for Mathematical Medicine and Biology, University of Nottingham, UK
+  - name: Kristin R Swanson
+    orcid: 0000-0002-2675-6338
+    affiliations: 
+      name: Mathematical Neuro-Oncology lab, Mayo Clinic Phoenix, AZ, USA
+
+     
+date: 08-23-2024
+categories: [MathOnco, Preprint, MathBio] 
+
+
+citation:
+  type: article-journal
+  author: 
+    - name: Nicholas Harbour
+    - name: Lee Curtin
+    - name: Matthew E Hubbard
+    - name: Pamela R Jackson
+    - name: Vinitha Rani
+    - name: Rajappa S Kenchappa
+    - name: Virginea Araujo Farias
+    - name: Anna Carrano
+    - name: Alfredo Quinones-Hinojosa
+    - name: Markus Owen
+    - name: Kristin R Swanson
+  container-title: "bioRxiv"
+
+
+image: image.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+toc: false
+---
+
+# Abstract
+
+We leverage an integrative mathematical modeling framework to translate the impact of preclinical findings in virtual clinical trials. We develop a virtual clinical trial pipeline to face the real-world problem of numerous of actual early phase clinical trials that have failed for glioma/glioblastoma, the most common primary brain tumor. Even with the most promising preclinical data, designing clinical trials is fraught with challenges, including controlling for the many parameters used to inform patient selection criteria. Here, we introduce a virtual trial pipeline that allows us to consider the variability from some of these criteria that can be used for future trials of novel therapies. As an example, we apply this to the proposed delivery of BMP4 to stem cell niches present in glioblastoma, the most aggressive glioma, known for its inter- and intra-patient heterogeneity. The proposed approach of BMP4 treatment, delivered through adipose-derived mesenchymal stem cells, aims to promote cellular differentiation away from the treatment-resistance stem cell niches towards a more treatment-vulnerable state. This pipeline will help us narrow down strategies for future trials, optimize timing of treatments relative to key standard-of-care treatments, and predict synergy amongst the developed treatments.
+
+
+
+

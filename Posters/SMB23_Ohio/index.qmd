@@ -2,6 +2,7 @@
 title: "Mathematical modelling of cell cycle dynamics in glioblastoma subpopulations"
 # confence = description
 description: " Annual meeting of the Society for Mathematical Biology"
+subtitle: "Ohio State University, OH, USA"
 # full author syntax
 author:
   - name: "**Nicholas Harbour**"
